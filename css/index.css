@@ -1,0 +1,2106 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    letter-spacing: -1px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #0032A0;
+}
+body{
+    width: 100%;
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Pretendard-Regular';
+    position: relative;
+}
+section h1{
+    font-family: "Afacad", sans-serif;
+}
+/* 액티브 네비게이션 */
+div.nav_active_wrap{
+    max-width: 400px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 90px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 10;
+    display: none;
+}
+.nav_active_wrap a{
+    display: block;
+    color: #111;
+}
+ul.user_account{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 30px;
+    float: right;
+    box-sizing: border-box;
+}
+ul.user_account li a{
+    padding: 4px 20px;
+    margin-left: 16px;
+    float: right;
+    font-size: 1.05rem;
+    letter-spacing: 0px;
+    border-radius: 11px;
+    box-sizing: border-box;
+}
+ul.user_account li a.signUp{
+    color: #0032A0;
+    border: 1px solid #0032A0;
+}
+ul.user_account li a.signUp:hover{
+    color: #6C70E1;
+    border: 1px solid #6C70E1;
+    transition: 0.2s;
+}
+ul.user_account li a.logIn{
+    color: #fff;
+    background: #0032A0;
+}
+ul.user_account li a.logIn:hover{
+    background: #6C70E1;
+    transition: 0.2s;
+}
+form.search_box{
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+label.none{
+    display: none;
+}
+input#search_text{
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px;
+    background: #f5f5f5;
+    box-shadow: 2px 2px 5px #dedede41 inset;
+    color: #111;
+    font-weight: 400;
+    outline: none;
+}
+input::-ms-clear,input::-ms-reveal{
+	display:none;
+    width:0;
+    height:0;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+	display:none;
+}
+span.active_search_Icon a{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 38px;
+    right: 50px;
+}
+span.active_search_Icon a svg{
+    width: 100%;
+}
+.nav_active_list{
+    width: 100%;
+    overflow: hidden;
+}
+.nav_active_list li a{
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+}
+ul.active_mainmenu{
+    position: relative;
+}
+ul.active_mainmenu a{
+    background: #fff;
+    font-size: 1.25rem;
+    color: #0032A0;
+    font-family: "Afacad", sans-serif;
+}
+div.subMore_icon{
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+div.subMore_icon span{
+    display: block;
+    width: 3px;
+    height: 14px;
+    background: #0032A0;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    position: absolute;
+}
+div.subMore_icon span.left{
+    transform: rotate(-42deg);
+    top: 4px;
+    left: 12px;
+}
+div.subMore_icon span.right{
+    transform: rotate(42deg);
+    top: 4px;
+    right: 11px;
+}
+ul.active_submenu{
+    display: none;
+}
+ul.active_submenu a{
+    padding: 13px 40px;
+    font-size: 1rem;
+    background: #eff1ff;
+    color: #0032A0;
+}
+ul.active_submenu a:hover{
+    color: #92b0f1;
+    transition: 0.2s;
+}
+/* 기존 헤더 영역 */
+header{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+    background: #fff;
+}
+div.head_wrap{
+    width: 100%;
+    overflow: hidden;
+}
+/* 헤더 로고 */
+.head_Logo a{
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 15%;
+    z-index: 999;
+}
+.head_Logo a img{
+    width: 100%;
+}
+/* 네비게이션 */
+nav.navigation{
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    position: absolute;
+    top: 24px;
+}
+div.nav_wrap{
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+    left: 24%;
+}
+div.nav_list{
+    float: left;
+}
+div.nav_list:nth-child(2){
+    margin-left: -4px;
+}
+div.nav_list:last-child{
+    margin-left: 20px;
+}
+ul li a{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+ul.mainmenu li a{
+    width: 120px;
+    font-size: 1.2rem;
+    color: #0032A0;
+    font-family: "Afacad", sans-serif;
+}
+ul.mainmenu li a:hover{
+    box-shadow: inset 0px -5px 0px #0032A0;
+}
+ul.submenu li a{
+    width: 120px;
+    display: block;
+    padding: 16px 0;
+    font-size: 0.9rem;
+    color:#fff;
+}
+ul.submenu{
+    display: none;
+}
+ul.submenu li a:hover{
+    color: #69748f;
+}
+div.bg_color{
+    width: 100%;
+    height: 167px;
+    background: rgba(60, 61, 142, 0.982);
+    position: absolute;
+    top: 66px;
+    z-index: -10;
+}
+/* 헤더 아이콘 */
+div.header_Icon_Wrap{
+    width: 210px;
+    margin-top: 30px;
+    float: left;
+    box-sizing: border-box;
+    position: absolute;
+    right: 15%;
+}
+.header_Icon_Wrap a{
+    display: block;
+}
+.header_Icon_Wrap span{
+    float: left;
+    margin: 0 17px;
+}
+.header_Icon_Wrap span a{
+    width: 34px;
+    height: 34px;
+}
+.header_Icon_Wrap span svg{
+    width: 100%;
+}
+.search_Icon a{
+    padding-top: 2px;
+}
+.message_Icon a{
+    box-sizing: border-box;
+    padding-top: 6px;
+}
+.header_Icon_Wrap>.search_Icon:hover svg{
+    fill: #7ba5ff;
+    transition: 0.2s;
+}
+.header_Icon_Wrap>.login_Icon:hover path{
+    stroke: #7ba5ff;
+    transition: 0.2s;
+}
+.header_Icon_Wrap>.message_Icon:hover path{
+    stroke: #7ba5ff;
+    transition: 0.2s;
+}
+/* 클릭시 부여할 스타일 */
+.header_Icon_Wrap span.x:nth-child(1){
+    display: none;
+}
+.header_Icon_Wrap span.x:nth-child(2) {
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    position: relative;
+    top: 4px;
+}
+
+.header_Icon_Wrap span.x:nth-child(3) {
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+    position: relative;
+    top: -4px; 
+}
+
+/*메인*/
+main{
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding-top: 90px;
+}
+/*슬라이드 영역*/
+section.slide{
+    width: 100%;
+    margin: 0 auto;
+    height: 750px;
+    overflow: hidden;
+    position: relative;
+}
+div.slide_Wrap{
+    width: 300%;
+    height: 100%;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+div.slide_Img_Wrap{
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+    margin: 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+div.slide_Img01{
+    background-image: url(../img/index-img/slide/slide_\ IMG1.jpg);
+    z-index: 2;
+}
+div.slide_Img02{
+    background-image: url(../img/index-img/slide/slide_\ IMG2.jpg);
+    background-size: 90%;
+    background-position: right;
+}
+div.slide_Img03{
+    background-image: url(../img/index-img/slide/slide_\ IMG3.jpg);
+}
+div.slide_text{
+    max-width: 550px;
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    top: 12%;
+    left: 10%;
+    color: #fff;
+}
+div.slide_txt02{
+    color: #0032A0;
+}
+div.slide_txt03{
+    color: #fff;
+}
+div.slide_text h3>span.en{
+    font-family: "Afacad", sans-serif;
+}
+div.slide_txt01 h3>span.kr{
+    font-weight: 600;
+    font-size: 1.65rem;
+}
+div.slide_txt02 h3>span.kr{
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+div.slide_txt03 h3>span.kr{
+    display: block;
+    line-height: 32px;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-top: 10px;
+}
+.slide_text>h3{
+    font-size: 2.625rem;/*42px*/
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 50px;
+}
+.slide_text>p{
+    font-size: 1.25rem;/*20px*/
+    font-weight: 300;
+    margin-top: 46px;
+    word-spacing: 1px;
+    letter-spacing: 0;
+}
+/*페이지네이션*/
+div.pagenation_Wrap{
+    max-width: 600px;
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.pagenation_Wrap span{
+    display: block;
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+    font-size: 0;
+    cursor: pointer;
+}
+.pagenation_Wrap span:first-child{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.pagenation_Wrap span:last-child{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+span.pagenat_element{
+    background: #DEDEDE;
+}
+span.color{
+    background: #b0b2ff;
+}
+/*슬라이드 바로가기 버튼*/
+div.slide_Shortcut_btn{
+    position: absolute;
+    bottom: 26%;
+    left: 37%;
+    z-index: 4;
+}
+button.ShortBtn{
+    padding: 10px 42px;
+    font-style: normal;
+    font-size: 1rem;
+    background: #6C70E1;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    letter-spacing: 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #12224923;
+    font-family: 'Pretendard-Regular';
+    letter-spacing: 1px;
+}
+button.ShortBtn:hover{
+    background: #fff;
+    color: #6C70E1;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+/*바로가기 링크 영역*/
+section.shortcutLink_conten{
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    max-height: 280px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background: #F6FBFF;
+}
+section.shortcutLink_conten h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #0032A0;
+}
+div.link_containor{
+    max-width: 1206px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+}
+.link_containor article{
+    max-width: 220px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 90px;
+    text-align: center;
+    position: relative;
+}
+.link_containor article>a{
+    display: block;
+    max-width: 144px;
+    width: 100%;
+    max-height: 144px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px #12224923;
+}
+.link_containor article div>a{
+    margin-left: 12px;
+    font-size: 1.25rem;
+    color: #0032A0;
+    font-weight: 500;
+}
+.link_containor article>a>img{
+    width: 100%;
+    height: 100%;
+}
+article.product_Wrap>a>img{
+    width: 150%;
+    height: 90%;
+    margin: 10px -42px;
+}
+article.nivea_men_conten>a>img{
+    width: 80%;
+    height: 90%;
+    margin: 10px 0;
+}
+.link_containor article:hover img{
+    transform: scale(1.06);
+    transition: 0.5s;
+}
+section.shortcutLink_conten article div>a::after{
+    border-right: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-color: inherit;
+    content: "";
+    display: inline-block;
+    height: 6px;
+    left: 0;
+    margin: 4px;
+    margin-left: 10px;
+    transform: rotate(45deg);
+    width: 6px;
+}
+article div.product_selectorBox>a{
+    display: block;
+    margin-top: 14px;
+    font-size: 1.6rem;
+    font-family: "Afacad", sans-serif;
+}
+article span.product_hover_selector>a{
+    display: inline-block;
+    margin: 8px 0;
+    color: #5A7ECE;
+    font-size: 1rem;
+    font-weight: 400;
+}
+article span.product_hover_selector>a::after{
+    content: '|';
+    margin-left: 12px;
+    margin-right: 10px;
+}
+span.product_hover_selector>a:last-child::after{
+    content: none;
+}
+span.product_hover_selector>a:hover{
+    text-decoration: underline;
+}
+span.product_hover_selector{
+    opacity: 0;
+}
+article:hover .product_hover_selector{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/*모이스처 라인 영역*/
+section.moisture_line{
+    width: 100%;
+    max-height: 600px;
+    height: 100vh;
+    background: #F6FBFF;
+    background-image: url(../img/index-img/moidture-product/496f0d208483185.66efa5ee2ac4b.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: bottom 0 left 16%;
+}
+.moisture_line article{
+    width: 430px;
+    float: right;
+    text-align: left;
+    position: relative;
+    top: 30%;
+    right: 12%;
+}
+article.moisture_txt_wrap>.title{
+    color: #0032A0;
+}
+article.moisture_txt_wrap>.title>li{
+    line-height: 40px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "Afacad", sans-serif;
+}
+ul.title>li.bigTitle{
+    font-size: 2.25rem;
+    font-weight: 800;
+    
+}
+span.txt_bar{
+    display: block;
+    width: 140px;
+    height: 4px;
+    margin: 30px 0;
+    background: #0032A0;
+}
+ul.detail_txt{
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+    word-spacing: 1px;
+    color: #3A5AA3;
+}
+button.moisture_btn{
+    margin-top: 52px;
+    padding: 10px 42px;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #6C70E1;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    letter-spacing: 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #12224923;
+    font-family: 'Pretendard-Regular';
+    letter-spacing: 1px;
+}
+button.moisture_btn:hover{
+    background: #fff;
+    color: #6C70E1;
+    font-weight: 700;
+    transition: 0.3s;
+}
+/*에디터 추천 영역*/
+div.aditor_bg{
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(#F6FBFF, #fff);
+}
+section.aditor_pick{
+    max-width: 1100px;
+    width: 100%;
+    height: 405px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 140px;
+    color: #0032A0;
+}
+section.aditor_pick>h1{
+    width: 300px;
+    margin: 0px auto;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+article.adit_left_wrap{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.adit_left_wrap .adit_txt{
+    width: 100%;
+    box-sizing: border-box;
+}
+.adit_left_wrap .title>li{
+    line-height: 40px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.adit_left_wrap .title>li.bigTitle{
+    font-family: "Afacad", sans-serif;
+}
+.adit_left_wrap p{
+    width: 420px;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    word-spacing: 1px;
+    color: #3A5AA3;
+}
+.adit_left_wrap div.icon_wrap{
+    width: 200px;
+    overflow: hidden;
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+    left: 20%;
+}
+button.aditor_btn{
+    margin-top: 76px;
+    margin-bottom: 20px;
+    padding: 10px 42px;
+    background: #6C70E1;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    letter-spacing: 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #12224923;
+    font-family: 'Pretendard-Regular';
+    letter-spacing: 1px;
+}
+button.aditor_btn:hover{
+    background: #fff;
+    color: #6C70E1;
+    font-weight: 700;
+    transition: 0.3s;
+}
+div.question_ico{
+    width: 200px;
+}
+div.question_ico img{
+    float: left;
+    margin-top: 2px;
+    margin-right: -24px;
+}
+div.question_ico span a{
+    display: block;
+    float: right;
+    width: 180px;
+    margin-top: 5px;
+    font-size: 0.875rem;
+}
+article.adit_img_wrap{
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    text-align: left;
+}
+article.adit_img_wrap img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+/*니베아 발걸음 영역*/
+section.nivea_footFall{
+    max-width: 1300px;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 24px;
+    padding-top: 140px;
+    margin: 0 auto;
+    color: #0032A0;
+    clear: both;
+}
+section.nivea_footFall h1{
+    width: 560px;
+    margin: 0px auto;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+article.element{
+    width: 100%;
+    overflow: hidden;
+}
+article.buttom{
+    margin: 30px 0;
+}
+article.element .img_box{
+    width: 50%;
+    height: 370px;
+    padding: 5px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+article.element .img_box > a.brand_img img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 6px #12224961;
+}
+article.element .img_box a.check_icon{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 6%;
+    right: 4%;
+}
+article.element .txt_box{
+    width: 50%;
+    float: right;
+}
+.element .txt_box dl{
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin: 50px auto;
+}
+.element .txt_box dl dt{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.element .txt_box dl dd{
+    margin: 10px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #3A5AA3;
+    word-spacing: 1px;   
+}
+section.nivea_footFall .icon_wrap{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+button.brandStory_btn{
+    margin-top: 52px;
+    margin-bottom: 20px;
+    padding: 10px 42px;
+    background: #6C70E1;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    letter-spacing: 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #12224923;
+    font-family: 'Pretendard-Regular';
+    letter-spacing: 1px;
+}
+button.brandStory_btn:hover{
+    background: #fff;
+    color: #6C70E1;
+    font-weight: 700;
+    transition: 0.3s;
+}
+section.nivea_footFall div.question_ico{
+    width: 208px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+section.nivea_footFall div.question_ico span>a{
+    width: 184px;
+}
+/*지속가능성 영역*/
+section.sustainable{
+    max-width: 1300px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 140px;
+    padding-bottom: 200px;
+    color: #0032A0;
+    position: relative;
+}
+.sustainable>h1{
+    width: 560px;
+    margin: 0px auto;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+.sustainable_list_wrap{
+    background: url(../img/index-img/suatainabil/suatainabil.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+.list_top_wrap, .list_buttom_wrap{
+    width: 100%;
+    height: 296px;
+    overflow: hidden;
+}
+.list_buttom_wrap{
+    margin: 100px 0;
+}
+.sustainable_list_wrap article{
+    width: 44%;
+    height: 294px;
+    padding: 50px 80px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #F3F7FF;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #12224923;
+}
+article.element_list1, .element_list3{
+    float: left;
+}
+article.element_list2, .element_list4{
+    float: right;
+    margin-right: 2px;
+}
+.sustainable_list_wrap article .title_txt>li{
+    font-size: 1.25rem;
+    line-height: 1.9rem;
+    font-weight: 500;
+}
+.sustainable_list_wrap article .title_txt>.main_title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #4447CD;
+}
+ul.detail_txt{
+    margin: 60px 0;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+div.number_box{
+    width: 88px;
+    height: 44px;
+    position: absolute;
+    top: 30px;
+    right: 16px;
+}
+div.number_box>span{
+    width: 50%;
+    height: 100%;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+}
+div.number_box>span.front_circle{
+    background: #C9CAFF;
+    color: #3C3E8E;
+    left: 0;
+    z-index: 1;
+}
+span.back_circle{
+    background: #EEEEFF;
+    color: #AEB0FB;
+    right: 10px;
+}
+section.sustainable button{
+    padding: 10px 42px;
+    background: #6C70E1;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    letter-spacing: 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #12224923;
+    font-family: 'Pretendard-Regular';
+    letter-spacing: 1px;
+    position: absolute;
+    left: 50%;
+    bottom: 14%;
+    transform: translateX(-50%);
+}
+section.sustainable button:hover{
+    background: #fff;
+    color: #6C70E1;
+    font-weight: 700;
+    transition: 0.3s;
+}
+/*푸터 영역*/
+footer{
+    width: 100%;
+    overflow: hidden;
+    background: #001B55;
+}
+footer a{
+    display: block;
+    color: #eee;
+}
+footer a:hover{
+    color: #ccc;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.foot_element_wrap{
+    max-width: 1920px;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/*왼쪽*/
+.element_left_wrap{
+    width: 55%;
+    height: 480px;
+    box-sizing: border-box;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+/*알림: ~*/
+.site_map_wrap{
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #ccc;
+}
+.site_map_wrap ul.title{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.site_map_wrap .site_map_element li a{
+    float: left;
+    padding: 2px 4px;
+    margin-right: 30px;
+}
+.site_map_wrap .top{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 90px;
+}
+.element_left_wrap .top .site_map_element{
+    margin-top: 30px;
+}
+.site_map_wrap .bottom{
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+/*무엇을 도와드릴까요?*/
+.nivea_more_wrap{
+    width: 100%;
+    height: 50%;
+}
+.more_link{
+    padding-top: 30px;
+}
+.more_link .link_wrap{
+    margin-top: 30px;
+}
+.more_link>li{
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 500;
+}
+.more_link li a{
+    float: left;
+    padding: 2px 4px;
+    margin-right: 30px;
+} 
+.more_link .bottom{
+    clear: both;
+}
+/*오른쪽*/
+.element_right_wrap{
+    float: left;
+    width: 45%;
+    height: 480px;
+    color: #fff;
+}
+dl.foot_SNS{
+    width: 100%;
+    height: 80%;
+    padding: 90px 30px;
+    box-sizing: border-box;
+}
+dl.foot_SNS>dt{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+dl.foot_SNS>dd{
+    float: left;
+}
+dl.foot_SNS>dd a{
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+dl.foot_SNS>dd a svg{
+    margin: 20%;
+}
+dl.foot_SNS>dd:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+/*로고*/
+.copyright_wrap{
+    width: 100%;
+    height: 20%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.copyright_wrap > a{
+    float: left;
+}
+.copy_txt{
+    float: right;
+}
+@media screen and (max-width: 1230px){
+    /*슬라이드 영역*/
+    section.slide{
+        height: 600px;
+    }
+    div.slide_text{
+        max-width: 380px;
+        width: 100%;
+    }
+    div.slide_text h3{
+        font-size: 2rem;
+    }
+    div.slide_text h3 span{
+        font-size: 1.5rem;
+    }
+    div.slide_text p{
+        font-size: 1.1rem;
+    }
+    div.slide_Shortcut_btn{
+        left: 32%;
+        bottom: 16%;
+    }
+    /*바로가기 영역*/
+    div.link_containor{
+        max-width: 900px;
+        width: 100%;
+        /* background: #eee; */
+    }
+    .link_containor article{
+        margin: 0 40px;
+    }
+    /*모이스처라인 영역*/
+    section.moisture_line{
+        max-height: 453px;
+        padding-top: 120px;
+        background-size: 60%;
+        background-position: bottom 0 left 2%;
+    }
+    .moisture_line article {
+        width: 350px;
+    }
+    article.moisture_txt_wrap{
+        top: 19%;
+        right: 6%;
+    }
+    ul.detail_txt {
+        margin: 38px 0;
+    }
+    button.moisture_btn {
+        margin-top: 0px;
+    }
+    /*에디터 추천 영역*/
+    section.aditor_pick{
+        max-width: 1000px;
+        width: 100%;
+    }
+    article.adit_left_wrap{
+        width: 40%;
+    }
+    article.adit_img_wrap{
+        float: right;
+    }
+    div.icon_wrap{
+        bottom: 10%;
+    }
+    /*니베아 발걸음 영역*/
+    section.nivea_footFall{
+        max-width: 1000px;
+        width: 100%;
+    }
+    section.nivea_footFall div.img_box{
+        height: 300px;
+        margin-top: 60px;
+    }
+    button.brandStory_btn {
+        margin-top: 12px;
+    }
+    /*지속가능성 영역*/
+    section.sustainable{
+        max-width: 1000px;
+        width: 100%;
+    }
+    .sustainable_list_wrap article .title_txt>.main_title{
+        font-size: 1.4rem;
+    }
+    .sustainable_list_wrap article .title_txt>li{
+        font-size: 1.1rem;
+    }
+    .sustainable_list_wrap ul.detail_txt{
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        margin: 46px 0;
+    }
+    div.number_box{
+        width: 68px;
+        height: 34px;
+    }
+    div.number_box>span{
+        height: 100%;
+        line-height: 34px;
+    }
+}
+@media screen and (max-width: 1224px){
+    /*헤더*/
+    .head_Logo a{
+        left: 10%;
+    }
+    div.header_Icon_Wrap{
+        right: 10%;
+    }
+    div.nav_wrap{
+        left: 20%;
+    }
+}
+@media screen and (max-width: 1046px){
+    /*헤더*/
+    .head_Logo a{
+        left: 5%;
+    }
+    div.header_Icon_Wrap{
+        right: 5%;
+    }
+    div.nav_wrap{
+        left: 15%;
+    }
+    /*슬라이드 영역*/
+    div.slide_text{
+        left: 5%;
+    }
+    div.slide_Btn_Wrap{
+        display: none;
+    }
+}
+@media screen and (max-width: 1230px) {
+    /*슬라이드 영역*/
+    section.slide {
+        height: 600px;
+    }
+    div.slide_text {
+        max-width: 380px;
+        width: 100%;
+    }
+    div.slide_text h3 {
+        font-size: 2rem;
+    }
+    div.slide_text h3 span {
+        font-size: 1.5rem;
+    }
+    div.slide_text p {
+        font-size: 1.1rem;
+    }
+    div.slide_Shortcut_btn {
+        left: 32%;
+        bottom: 16%;
+    }
+
+    /*바로가기 영역*/
+    div.link_containor {
+        max-width: 900px;
+        width: 100%;
+    }
+    .link_containor article {
+        margin: 0 40px;
+    }
+
+    /*모이스처라인 영역*/
+    section.moisture_line {
+        max-height: 453px;
+        padding-top: 120px;
+        background-size: 60%;
+        background-position: bottom 0 left 2%;
+    }
+    .moisture_line article {
+        width: 350px;
+    }
+    article.moisture_txt_wrap {
+        top: 19%;
+        right: 6%;
+    }
+    ul.detail_txt {
+        margin: 38px 0;
+    }
+    button.moisture_btn {
+        margin-top: 0;
+    }
+
+    /*에디터 추천 영역*/
+    section.aditor_pick {
+        max-width: 1000px;
+        width: 100%;
+    }
+    article.adit_left_wrap {
+        width: 40%;
+    }
+    article.adit_img_wrap {
+        float: right;
+    }
+    div.icon_wrap {
+        bottom: 10%;
+    }
+
+    /*니베아 발걸음 영역*/
+    section.nivea_footFall {
+        max-width: 1000px;
+        width: 100%;
+    }
+    section.nivea_footFall div.img_box {
+        height: 300px;
+        margin-top: 60px;
+    }
+    button.brandStory_btn {
+        margin-top: 12px;
+    }
+
+    /*지속가능성 영역*/
+    section.sustainable {
+        max-width: 1000px;
+        width: 100%;
+    }
+    .sustainable_list_wrap article .title_txt > .main_title {
+        font-size: 1.4rem;
+    }
+    .sustainable_list_wrap article .title_txt > li {
+        font-size: 1.1rem;
+    }
+    .sustainable_list_wrap ul.detail_txt {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        margin: 46px 0;
+    }
+    div.number_box {
+        width: 68px;
+        height: 34px;
+    }
+    div.number_box > span {
+        height: 100%;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 1224px) {
+    /*헤더*/
+    .head_Logo a {
+        left: 10%;
+    }
+    div.header_Icon_Wrap {
+        right: 10%;
+    }
+    div.nav_wrap {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 1046px) {
+    /*헤더*/
+    .head_Logo a {
+        left: 5%;
+    }
+    div.header_Icon_Wrap {
+        right: 5%;
+    }
+    div.nav_wrap {
+        left: 15%;
+    }
+    /*슬라이드 영역*/
+    div.slide_text {
+        left: 5%;
+    }
+    div.slide_Btn_Wrap {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1038px) {
+    /*에디터 추천 영역*/
+    div.aditor_bg {
+        padding-bottom: 60px;
+    }
+    section.aditor_pick {
+        max-width: 800px;
+    }
+    .adit_left_wrap p {
+        width: 360px;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+
+    /*니베아 발걸음 영역*/
+    section.nivea_footFall {
+        max-width: 800px;
+    }
+    section.nivea_footFall h1 {
+        margin-bottom: 0;
+    }
+    section.nivea_footFall div.img_box {
+        margin-top: 70px;
+        height: 242px;
+    }
+    .element .txt_box {
+        margin-top: 60px;
+    }
+    .element .txt_box dl {
+        box-sizing: border-box;
+        margin: 20px auto;
+    }
+    .element .txt_box dl dt {
+        font-size: 1.3rem;
+    }
+    .element .txt_box dl dd {
+        font-size: 1rem;
+    }
+    .adit_left_wrap div.icon_wrap {
+        margin: 10px 0;
+    }
+
+    /*지속가능성 영역*/
+    section.sustainable {
+        max-width: 800px;
+    }
+    .sustainable_list_wrap article {
+        height: 284px;
+        padding: 50px 20px;
+    }
+    .sustainable_list_wrap ul.detail_txt {
+        font-size: 1.06rem;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    div.nav_wrap {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    /*헤더*/
+    header {
+        height: 60px;
+    }
+    .head_Logo a {
+        transform: scale(0.7);
+        top: -16px;
+    }
+    nav.navigation {
+        display: none;
+    }
+    div.header_Icon_Wrap {
+        width: 30px;
+        height: 30px;
+        top: -10px;
+    }
+    .header_Icon_Wrap span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin: 2px auto;
+        background: #0032A0;
+        border-radius: 10px;
+    }
+    .header_Icon_Wrap span svg {
+        display: none;
+    }
+    main {
+        padding-top: 60px;
+    }
+
+    /*모이스처 영역*/
+    section.moisture_line {
+        max-height: 333px;
+    }
+    .moisture_line article {
+        width: 340px;
+    }
+    article.moisture_txt_wrap {
+        top: 0%;
+    }
+    ul.title > li.bigTitle {
+        font-size: 2rem;
+    }
+    span.txt_bar {
+        margin: 17px 0;
+    }
+    ul.detail_txt {
+        margin: 20px 0;
+    }
+    button.moisture_btn {
+        margin-top: 10px;
+    }
+
+    /*푸터*/
+    .foot_element_wrap {
+        padding-top: 30px;
+    }
+    .element_left_wrap {
+        width: 100%;
+        height: 300px;
+        padding: 0 30px;
+    }
+    .site_map_wrap .top {
+        padding-top: 20px;
+    }
+    .element_left_wrap {
+        border-right: none;
+    }
+    .element_right_wrap {
+        width: 100%;
+        height: 234px;
+    }
+    .nivea_more_wrap {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+    }
+    dl.foot_SNS {
+        width: 50%;
+        height: 60%;
+        padding-top: 60px;
+        float: left;
+    }
+    .copyright_wrap {
+        width: 50%;
+        overflow: hidden;
+        padding: 0;
+        margin: 60px 0;
+        float: left;
+    }
+    dl.foot_SNS > dd a {
+        transform: scale(0.9);
+        margin-right: 10px;
+    }
+    .copyright_wrap > a {
+        float: none;
+    }
+    .copy_txt {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    /*바로가기 링크 영역*/
+    div.link_containor {
+        max-width: 660px;
+    }
+    .link_containor article {
+        margin: 0;
+    }
+    .link_containor article > a {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 828px){
+    /*슬라이드*/
+    section.slide{
+        height: 500px;
+    }
+    div.slide_text{
+        max-width: 330px;
+        margin-top: 20px;
+        padding: 0;
+    }
+    div.slide_text h3{
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+    div.slide_text p{
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    button.ShortBtn{
+        padding: 8px 30px;
+        font-size: 0.8rem;
+        bottom: 20%;
+    }
+    /*모이스처*/
+    section.moisture_line{
+        position: relative;
+        max-width: 800px;
+        max-height: 696px;
+        overflow: hidden;
+        background-size: 90%;
+        background-position: center bottom;
+    }
+    article.moisture_txt_wrap{
+        width: 100%;
+        height: 350px;
+        text-align: center;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    span.txt_bar{
+        margin: 30px auto;
+    }
+    ul.detail_txt{
+        width: 62%;
+        margin: 0 auto;
+    }
+    button.moisture_btn{
+        position: absolute;
+        bottom: 0%;
+    } 
+
+    /*에디터 추천*/
+    div.aditor_bg{
+        padding-bottom: 0;
+    }
+    section.aditor_pick{
+        max-width: 800px;
+        width: 100%;
+        height: 1034px;
+        position: relative;
+        box-sizing: border-box;
+    }
+    article.adit_left_wrap{
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        bottom: 4%;
+    }
+    span.txt_bar{
+        margin: 30px auto;
+    }
+    .adit_left_wrap p{
+        width: 64%;
+        margin: 0 auto;
+    }
+    article.adit_img_wrap{
+        max-width: 600px;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    article.adit_img_wrap img{
+        width: 100%;
+        height: 100%;
+    }
+    .adit_left_wrap div.icon_wrap{
+        left: 50%;
+        transform: translate(-50%);
+    }
+    /*니베아 발걸음*/
+    section.nivea_footFall{
+        max-width: 600px;
+    }
+    section.nivea_footFall h1{
+        margin-bottom: 30px;
+    }
+    section.nivea_footFall article{
+        margin: 0 auto;
+    }
+    section.nivea_footFall div.img_box{
+        width: 100%;
+        height: 300px;
+        margin-top: 0;
+    }
+    article.element .txt_box{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .element .txt_box dl{
+        width: 100%;
+        margin: 30px 0;
+    }
+    /*지속가능성*/
+    section.sustainable{
+        max-width: 600px;
+    }
+    .sustainable>h1{
+        margin-bottom: 30px;
+    }
+    .sustainable_list_wrap{
+        background: none;
+    }
+    .list_top_wrap,.list_buttom_wrap{
+        max-width: 598px;
+        width: 100%;
+        height: 462px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .list_buttom_wrap{
+        margin: 0 auto;
+        position: relative;
+    }
+    .sustainable_list_wrap article{
+        width: 99%;
+        max-height: 218px;
+        padding: 0;
+        margin-top: 10px;
+        float: left;
+    }
+    .sustainable article ul.title_txt{
+        width: 60%;
+        margin: 30px;
+    }
+    .sustainable ul.detail_txt{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .element .txt_box dl {
+        padding: 0 0;
+    }
+    section.sustainable button{
+        bottom: 8%;
+    }
+}
+@media screen and (max-width: 682px){
+    /*슬라이드*/
+    section.slide{
+        height: 500px;
+    }
+    div.pagenation_Wrap{
+        max-width: 300px;
+        height: 4px;
+    }
+    div.slide_Img01{
+        background-size: cover;
+        background-position-x: 55%;
+    }
+    div.slide_Img02{
+        background-size: 130%;
+        background-position-x: 80%;
+    }
+    div.slide_Img03{
+        background-size: cover;
+        background-position-x: 65%;
+    }
+    div.slide_text h3{
+        margin-top: 30%;
+        font-size: 1.8rem;
+    }
+    div.slide_text h3 span{
+        font-size: 1.8rem;
+    }
+    div.slide_text h3>span.kr{
+        font-size: 1.6rem;
+    }
+    div.slide_text p {
+        display: none;
+    }
+    div.slide_Shortcut_btn{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /*바로가기 링크*/
+    div.link_containor{
+        max-width: 600px;
+    }
+    .link_containor article{
+        max-width: 166px;
+    }
+    .link_containor article>a{
+        width: 110px;
+        height: 110px;
+    }
+    article div.product_selectorBox>a{
+        font-size: 1.1rem;
+    }
+    article span.product_hover_selector>a{
+        font-size: 0.8rem;
+    }
+    /*에디터 추천*/
+    article.adit_img_wrap{
+        max-width: 560px;
+    }
+    article.adit_left_wrap {
+        bottom: 6%;
+    }
+    /*푸터*/
+    .site_map_wrap .site_map_element li a{
+        margin-right: 10px;
+    }
+    .element_left_wrap .top .site_map_element {
+        margin-top: 10px;
+    }
+    .site_map_wrap ul.title{
+        font-size: 1.1rem;
+    }
+    .more_link .link_wrap {
+        margin-top: 10px;
+    }
+    .more_link>li{
+        font-size: 1.1rem;
+    }
+    .more_link li a {
+        margin-right: 10px;
+    }
+    dl.foot_SNS>dt{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 580px){
+    /*모이스처*/
+    section.moisture_line {
+        max-height: 605px;
+    }
+    /*에디터*/
+    section.aditor_pick{
+        height: 960px;
+    }
+    section.aditor_pick>h1{
+        font-size: 3rem;
+    }
+    article.adit_img_wrap{
+        max-width: 450px;
+        top: 22%;
+    }
+    article.adit_img_wrap{
+        top: 25%;
+    }
+    article.adit_left_wrap {
+        bottom: 6%;
+    }
+    /*니베아 발걸음*/
+    section.nivea_footFall{
+        max-width: 450px;
+    }
+    section.nivea_footFall h1{
+        width: 100%;
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+    }
+    section.nivea_footFall div.img_box{
+        height: 250px;
+    }
+    /*지속가능성*/
+    section.sustainable{
+        max-width: 450px;
+    }
+    .sustainable>h1{
+        font-size: 2.4rem;
+        width: 100%;
+    }
+    .list_top_wrap, .list_buttom_wrap{
+        height: 502px;
+    }
+    .sustainable_list_wrap article{
+        max-height: 240px;
+    }
+    .sustainable_list_wrap article .title_txt>.main_title{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 536px){
+    /*바로가기 링크*/
+    section.shortcutLink_conten h1{
+        font-size: 2.4rem;
+    }
+    div.link_containor{
+        padding-top: 32px;
+    }
+    .link_containor article{
+        max-width: 160px;
+    }
+    /*에디터*/
+    section.aditor_pick>h1{
+        font-size: 2.4rem;
+    }
+    /*푸터*/
+    .site_map_wrap ul.title{
+        font-size: 0.96rem;
+    }
+    .site_map_element li a{
+        font-size: 0.8rem;   
+    }
+    .more_link>li{
+        font-size: 0.96rem;
+    }
+    .more_link li a{
+        font-size: 0.8rem; 
+    }
+    dl.foot_SNS>dt{
+        font-size: 0.96rem;
+    }
+    dl.foot_SNS > dd a{
+        transform: scale(0.8);
+        margin-right: 2px;
+    }
+    .copyright_wrap{
+        transform: scale(0.9);
+    }
+}
+@media screen and (max-width: 510px){
+    /*에디터 추천*/
+    article.adit_img_wrap{
+        max-width: 380px;
+    }
+}
+@media screen and (max-width: 482px){
+    /*슬라이드*/
+    div.slide_text {
+        display: none;
+    }
+    div.slide_Img01 {
+        background-size: cover;
+        background-position-x: 68%;
+    }
+    div.slide_Img02 {
+        background-size: 160%;
+        background-position-x: 97%;
+    }
+    button.ShortBtn {
+        display: none;
+    }
+    /*바로가기 링크*/
+    section.shortcutLink_conten h1{
+        font-size: 2.4rem;
+    }
+    div.link_containor {
+        max-width: 400px;
+        padding-top: 30px;
+    }
+    .link_containor article {
+        margin: 0 6px;
+    }
+    .link_containor article>a{
+        transform: scale(0.9);
+    }
+    article span.product_hover_selector>a::after {
+        text-align: center;
+        content: ' ';
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+    /*모이스처*/
+    section.moisture_line{
+        max-height: 486px;
+    }
+    article.moisture_txt_wrap{
+        top: 0;
+    }
+    button.moisture_btn{
+        bottom: 0%;
+    }
+    /*에디터 추천*/
+    section.aditor_pick {
+        height: 860px;
+    }
+    section.aditor_pick {
+        padding-top: 120px;
+    }
+    section.aditor_pick>h1{
+        font-size: 2.4rem;
+    }
+    article.adit_img_wrap{
+        top: 21%;
+    }
+    article.adit_left_wrap{
+        bottom: 8%;
+    }
+    /*니베아 발걸음*/
+    section.nivea_footFall {
+        padding-top: 120px;
+        max-width: 364px;
+    }
+    section.nivea_footFall h1 {
+        font-size: 2.4rem;
+    }
+    section.nivea_footFall div.img_box {
+        height: 210px;
+    }
+    /*지속가능성*/
+    section.sustainable {
+        max-width: 364px;
+        padding-top: 120px;
+    }
+    .list_top_wrap, .list_buttom_wrap {
+        height: 332px;
+    }
+    .list_top_wrap, .list_buttom_wrap {
+        height: 512px;
+    }
+    .sustainable article ul.title_txt {
+        width: 70%;
+    }
+    .sustainable_list_wrap article .title_txt>.main_title {
+        font-size: 1.1rem;
+    }
+    .sustainable_list_wrap article .title_txt>li {
+        font-size: 1.0rem;
+    }
+    .sustainable_list_wrap ul.detail_txt {
+        font-size: 0.96rem;
+    }
+    div.number_box {
+        width: 48px;
+        height: 24px;
+    }
+    div.number_box>span {
+        font-size: 0.7rem;
+        line-height: 24px;
+        left: 19px;
+    }
+    /*푸터*/
+    dl.foot_SNS{
+        width: 100%;
+        padding-bottom: 100px;
+    }
+    .copyright_wrap{
+        float: none;
+        clear: both;
+        margin: 80px 12px;
+        transform: scale(0.7);
+    }
+}
+@media screen and (max-width: 450px){
+    /*모이스처*/
+    section.moisture_line {
+        max-height: 452px;
+    }
+    article.moisture_txt_wrap {
+        height: 326px;
+    }
+    article.moisture_txt_wrap>.title>li{
+        line-height: 30px;
+        font-size: 1.2rem;
+    }
+    ul.title>li.bigTitle{
+        font-size: 1.4rem;
+    }
+    ul.detail_txt{
+        font-size: 0.96rem;
+    }
+    .sustainable article ul.title_txt{
+        margin: 20px 30px;
+    }
+    button.moisture_btn {
+        bottom: -6%;
+    }
+    /*에디터 추천*/
+    section.aditor_pick {
+        height: 780px;
+    }
+    article.adit_img_wrap{
+        max-width: 300px;
+        top: 23%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .adit_left_wrap p{
+        font-size: 0.96rem;
+    }
+    .element .txt_box dl dd{
+        font-size: 0.96rem;
+    }
+}
+@media screen and (max-width: 397px){
+    /*바로가기 링크*/
+    div.link_containor {
+        max-width: 340px;
+    }
+    .link_containor article {
+        max-width: 90px;
+        margin: 0 11px;
+    }
+    .link_containor article>a {
+        width: 90px;
+        height: 90px;
+    }
+    /*에디터 추천*/
+    section.aditor_pick{
+        height: 802px;
+    }
+    article.adit_img_wrap {
+        top: 23%;
+    }
+    article.adit_left_wrap{
+        bottom: 9%;
+    }
+    /*니베아 발걸음*/
+    section.nivea_footFall{
+        max-width: 324px;
+    }
+    button.brandStory_btn{
+        margin-top: 0;
+    }
+}

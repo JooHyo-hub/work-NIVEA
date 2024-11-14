@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>nivea</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <script src="js/nav.js"></script>
+</head>
+<body>
+    <!-- 액티브 네비게이션 -->
+    <div class="nav_active_wrap">
+        <ul class="user_account">
+            <li>
+                <a href="login.html" class="signUp">Sign Up</a>
+            </li>
+            <li>
+                <a href="login.html" class="logIn">Log in</a>
+            </li>
+        </ul>
+        <form class="search_box">
+            <label class="none">검색</label>
+            <input id="search_text" type="search" placeholder="무엇을 찾으시나요?">
+            <span class="active_search_Icon">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#0233A0">
+                        <path d="M30.718,31.522,22.4,23.207a.8.8,0,0,1-.014-1.116,11.957,11.957,0,1,0-3.463,2.542.8.8,0,0,1,.7,1.439,13.613,13.613,0,1,1,4.442-3.459l7.781,7.779Z"></path>
+                    </svg>
+                </a>
+            </span>
+        </form>
+        <nav class="nav_active">
+            <div class="nav_active_list">
+                <ul class="active_mainmenu">
+                    <li>
+                        <a href="#">PRODUCTS</a>
+                    </li>
+                    <div class="subMore_icon">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </div>
+                </ul>
+                <ul class="active_submenu">
+                    <li>
+                        <a href="product.html">전체 제품</a>
+                    </li>
+                    <li>
+                        <a href="product.html">신제품</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_active_list">
+                <ul class="active_mainmenu">
+                    <li>
+                        <a href="#">ADVICE</a>
+                    </li>
+                    <div class="subMore_icon">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </div>
+                </ul>
+                <ul class="active_submenu">
+                    <li>
+                        <a href="#">피부조언</a>
+                    </li>
+                    <li>   
+                        <a href="#">남성 피부 팁</a>
+                    </li>
+                    <li>
+                        <a href="#">라이프 스타일</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_active_list">
+                <ul class="active_mainmenu">
+                    <li>
+                        <a href="#">RECOMMEND</a>
+                    </li>
+                    <div class="subMore_icon">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </div>
+                </ul>
+                <ul class="active_submenu">
+                    <li>
+                        <a href="product.html">에디터 추천</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_active_list">
+                <ul class="active_mainmenu">
+                    <li>
+                        <a href="#">NIVEA WORLD</a>
+                    </li>
+                    <div class="subMore_icon">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </div>
+                </ul>
+                <ul class="active_submenu">
+                    <li>
+                        <a href="#">역사와 가치</a>
+                    </li>
+                    <li>
+                        <a href="#">뉴스 속의 니베아</a>
+                    </li>
+                    <li>
+                        <a href="#">지속 가능성</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <header>
+        <div class="head_wrap">
+            <!-- 헤더 로고 영역 -->
+            <h1 class="head_Logo">
+                <a href="index.html">
+                    <img id = "logoImg" src="img/index-img/header/NIVEA_logo_2021.svg" alt="nivea-logo">
+                </a>
+            </h1>
+            <!-- 네비게이션 영역 -->
+            <nav class="navigation">
+                <div class="nav_wrap">
+                    <div class="nav_list">
+                        <ul class="mainmenu">
+                            <li>
+                                <a href="product.html">PRODUCTS</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu">
+                            <li>
+                                <a href="product.html">전체 제품</a>
+                            </li>
+                            <li>
+                                <a href="product.html">신제품</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_list">
+                        <ul class="mainmenu">
+                            <li>
+                                <a href="#">ADVICE</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">피부조언</a>
+                            </li>
+                            <li>   
+                                <a href="#">남성 피부 팁</a>
+                            </li>
+                            <li>
+                                <a href="#">라이프 스타일</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_list">
+                        <ul class="mainmenu">
+                            <li>
+                                <a href="#">RECOMMEND</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu">
+                            <li>
+                                <a href="product.html">에디터 추천</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_list">
+                        <ul class="mainmenu">
+                            <li>
+                                <a href="#">NIVEA WORLD</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">역사와 가치</a>
+                            </li>
+                            <li>
+                                <a href="#">뉴스 속의 니베아</a>
+                            </li>
+                            <li>
+                                <a href="#">지속 가능성</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg_color"></div>
+            </nav>
+            <!-- 헤더 아이콘 영역 -->
+            <div class="header_Icon_Wrap">
+                <span class="search_Icon">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#0233A0">
+                            <path d="M30.718,31.522,22.4,23.207a.8.8,0,0,1-.014-1.116,11.957,11.957,0,1,0-3.463,2.542.8.8,0,0,1,.7,1.439,13.613,13.613,0,1,1,4.442-3.459l7.781,7.779Z"></path>
+                        </svg>
+                    </a>
+                </span>
+                <span class="message_Icon">
+                    <a href="#">
+                        <svg width="40" height="26" viewBox="0 0 40 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1V25M1 1H20H39M1 1L15.5859 12.0545M39 1V25M39 1L20 15.4L15.5859 12.0545M39 25H1M39 25L25.1818 12.0545M1 25C5.60606 20.8222 14.9717 12.3842 15.5859 12.0545" stroke="#0233A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </span>
+                <span class="login_Icon">
+                    <a href="login.html">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29 9.5C29 14.1944 25.1944 18 20.5 18C15.8056 18 12 14.1944 12 9.5C12 4.80558 15.8056 1 20.5 1C25.1944 1 29 4.80558 29 9.5Z" stroke="#0233A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 38V28.6667C2 26.0893 4.01472 24 6.5 24H33.5C35.9854 24 38 26.0893 38 28.6667V38" stroke="#0233A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--슬라이드 영역-->
+        <section class="slide">
+            <!--슬라이드 이미지's-->
+            <div class="slide_Wrap">
+                <div class="slide_Img_Wrap slide_Img01">
+                    <!--background Img-->
+                    <div class="slide_text slide_txt01">
+                        <h3>글로벌 <span class="en">No</span>.1 스킨케어 브랜드<br>
+                            <span class="kr">니베아가 지켜온 112년 피부과학,</span>
+                        </h3>
+                        <p>
+                            니베아는 최초의 스킨케어 크림을 개발한 순간부터 피부 그 자체의 힘을 믿어왔습니다.
+                            가장 기본에 충실한 스킨케어로 피부에 닿는 부담은 줄이고, 피부 본연의 잠재력을 끌어올릴 수 있도록,<br><br>
+                            건강한 피부에서 나오는 자신감, 니베아로 나를 더 빛나게!
+                        </p>
+                    </div>
+                </div>
+                <div class="slide_Img_Wrap slide_Img02">
+                    <!--background Img-->
+                    <div class="slide_text slide_txt02">
+                        <h3>
+                            <span class="en">NIVEA FOAM</span><br>
+                            <span class="kr">민감성 피부에도 ok!</span>
+                        </h3>
+                        <p>
+                            쫀쫀하고 풍성한 거품이 피부 자극을 최소화하는 니베아 폼,<br>
+                            민감 피부 진정 케어 & 에탄올 무첨가 테스트 완료<br><br>
+                            **피부 자극 테스트 완료
+                        </p>
+                    </div>
+                </div>
+                <div class="slide_Img_Wrap slide_Img03">
+                    <!--background Img-->
+                    <div class="slide_text slide_txt03">
+                        <h3>
+                            <span class="en">NIVEA</span> 아쿠아 글로우<br>
+                            <span class="kr">피부 스스로를 건강하게!</span><br>
+                        </h3>
+                        <p>
+                            피부 깊숙이 스며드는 극강의 보습력으로<br>건조한 피부의 가려움을 하루종일 편안하게
+                            <br>니베아 아쿠아 글로우로 촉촉함을 느껴보세요 !
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--슬라이드 하단 페이지네이션-->
+            <div class="pagenation_Wrap">
+                <span class="pagenat_element pagenat1 color">1</span>
+                <span class="pagenat_element pagenat2">2</span>
+                <span class="pagenat_element pagenat3">3</span>
+            </div>
+            <!--바로가기 버튼-->
+            <div class="slide_Shortcut_btn">
+                <button class="ShortBtn" type="button" onclick="location.href='product.html'">바로가기</button>
+            </div>
+        </section>
+        <!--바로가기 링크 아이콘 영역-->
+        <section class="shortcutLink_conten">
+            <h1>Can I help you?</h1>
+            <div class="link_containor">
+                <article class="product_Wrap">
+                    <a href="product.html">
+                        <img src="img/index-img/link/produxct-link.png" alt="제품 링크">
+                    </a>
+                    <div class="product_selectorBox">
+                        <a href="product.html">product</a>
+                        <span class="product_hover_selector">
+                            <a href="product.html">전체</a>
+                            <a href="product.html">신제품</a>
+                        </span>
+                    </div>
+                </article>
+                <article class="nivea_men_conten">
+                    <a href="#">
+                        <img src="img/index-img/link/niveaMen-link.webp" alt="니베아맨 링크">
+                    </a>
+                    <div class="product_selectorBox">
+                        <a href="product.html">MEN</a>
+                        <span class="product_hover_selector">
+                            <a href="product.html">니베아 맨</a>
+                            <a href="#">남성 피부 팁</a>
+                        </span>
+                    </div>
+                </article>
+                <article class="editorialLink_conten">
+                    <a href="#">
+                        <img src="img/index-img/link/brand-link.png" alt="브랜드 링크">
+                    </a>
+                    <div class="product_selectorBox" viewBox="0 0 80 80">
+                        <a href="#">NIVEA</a>
+                        <span class="product_hover_selector">
+                            <a href="#">브랜드 & 컴퍼니</a>
+                            <a href="#">문의하기</a>
+                        </span>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--모이스처 라인 영역-->
+        <section class="moisture_line">
+            <article class="moisture_txt_wrap">
+                <ul class="title">
+                    <li>무엇보다 강력한 보습 효과</li>
+                    <li class="bigTitle">Nivea Daily Moisture</li>
+                </ul>
+                <span class="txt_bar"></span>
+                <ul class="detail_txt">
+                    <li>니베아의 데일리 모이스처 라인을 통해 상쾌함과 활력 회복을 느껴보세요 ! <br>
+                        <br>
+                        가볍고 크리미한 텍스처는 믿을 수 없을 만큼 부드럽고, 비타민 E와 호호바
+                        오일을 함유하여 더욱 더 건강한 피부를 만들어줍니다.
+                    </li>
+                </ul>
+                <button class="moisture_btn">제품 보기</button>
+            </article>
+        </section>
+        <!--에디터 추천 영역-->
+        <div class="aditor_bg">
+            <section class="aditor_pick">
+                <h1>Editor Pick !</h1>
+                <article class="adit_left_wrap hidden"><!--스크립트 제어-->
+                    <div class="adit_txt">
+                        <ul class="title">
+                            <li>에디터가 추천하는</li>
+                            <li class="bigTitle">Refreshing Day Cream</li>
+                        </ul>
+                        <span class="txt_bar"></span>
+                        <p>
+                            니베아의 “리프레싱 데이 크림”은 뛰어난 보습과 함께
+                            피부의 수분 장벽을 보충하여 24시간 내내 촉촉하고
+                            건강한 피부를 유지합니다.
+                        </p>
+                    </div>
+                    <div class="icon_wrap">
+                        <button type="button" class="aditor_btn" onclick="location.href='product.html'">제품 보기</button>
+                        <div class="question_ico">
+                            <img src="img/index-img/editorPick/menu-arrow-circle.svg" alt="question-circle">
+                            <span>
+                                <a href="#">피부에 대한 고민이 있으신가요?</a>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="adit_img_wrap hidden"><!--스크립트 제어-->
+                    <img src="img/index-img/editorPick/editor.png" alt="Refreshing Day Cream-aditor">
+                </article>
+            </section>
+        </div>
+        <!--니베아 발걸음 영역-->
+        <section class="nivea_footFall">
+            <h1>Nivea Steps Started In 1911</h1>
+            <article class="element top">
+                <div class="img_box">
+                    <a href="#" class="brand_img">
+                        <img src="img/index-img/brand story/brandIMG01.jpg" alt="brand-img1">
+                    </a>
+                    <a href="#" class="check_icon">
+                        <img src="img/index-img/brand story/check-icon.svg" alt="check-icon">
+                    </a>
+                </div>
+                <div class="txt_box">
+                    <dl>
+                        <dt>01. 제품 개발을 위한 글로벌 팀</dt>
+                        <dd>
+                            니베아는 1,290명의 과학자들로 구성하여 피부 관리를 위한 돌파구를
+                            제시하기 위해 꾸준히 제품 개선을 위한 노력을 하고 있습니다.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>02. 세계 최고의 연구 개발 센터</dt>
+                        <dd>
+                            세계 최고의 연구 개발 센터를 보유하고 있으며, 1년에
+                            약 1,700개의 연구 개발을 진행하며 신제품의 효능과 내약성을 연구했습니다.
+                        </dd>
+                    </dl>
+                </div>
+            </article>
+            <article class="element buttom">
+                <div class="img_box">
+                    <a href="#" class="brand_img">    
+                        <img src="img/index-img/brand story/brandIMG02.png" alt="brand-img2">
+                    </a>
+                    <a href="#" class="check_icon">
+                        <img src="img/index-img/brand story/check-icon.svg" alt="check-icon">
+                    </a>
+                </div>
+                <div class="txt_box">
+                    <dl>
+                        <dt>03. 니베아의 동물실험 반대</dt>
+                        <dd>
+                            우리는 제품 생산에 동물실험이 필수가 아니라고 확신합니다.
+                            이는 수십년이 넘도록 동물 실험을 하지 않는 화장품을 만들어내려고 노력하는 이유입니다.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>04. 좋은 사람들과의 파트너쉽</dt>
+                        <dd>
+                            우리는 전 세계 500여개의 각 대학, 연구 센터 및 스타트업 기업들과 함께
+                            글로벌 연구 네트워크와 파트너쉽을 제공해왔습니다.
+                        </dd>
+                    </dl>
+                </div>
+            </article>
+            <div class="icon_wrap">
+                <button class="brandStory_btn">브랜드 스토리</button>
+                <div class="question_ico">
+                    <img src="img/index-img/editorPick/menu-arrow-circle.svg" alt="question-circle">
+                    <span>
+                        <a href="#">니베아에 궁금한 점이 있으신가요?</a>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!--지속가능성 영역-->
+        <section class="sustainable">
+            <h1>Nivea’s Sustainability</h1>
+            <div class="sustainable_list_wrap">
+                <div class="list_top_wrap">
+                    <article class="element_list1">
+                        <ul class="title_txt">
+                            <li class="main_title">신뢰 & 가치,</li>
+                            <li>니베아가 중요시 하는 두 가지 가치</li>
+                        </ul>
+                        <ul class="detail_txt">
+                            <li>우리 모두가 환경 보호에 대한 관심을 갖도록 안전하고, 순하고, 효과적인 스킨 케어 그리고 환경과 관련된 모든 정보를 제공하고자 합니다.</li>
+                        </ul>
+                        <div class="number_box">
+                            <span class="front_circle">01</span>
+                            <span class="back_circle">02</span>   
+                        </div>
+                    </article>
+                    <article class="element_list2">
+                        <ul class="title_txt">
+                            <li class="main_title">피부를 우선으로,</li>
+                            <li>피부 본연의 건강과 아름다움을 지키는 것</li>
+                        </ul>
+                        <ul class="detail_txt">
+                            <li>터치와 스킨십의 감각은 인간의 성장에 매우 중요하며 우리를 신체적, 정서적으로 건강하게 만듭니다.</li>
+                        </ul>
+                        <div class="number_box">
+                            <span class="front_circle">02</span>
+                            <span class="back_circle">03</span>   
+                        </div>
+                    </article>
+                </div>
+                <div class="list_buttom_wrap">
+                    <article class="element_list3">
+                        <ul class="title_txt">
+                            <li class="main_title">우리의 세상을 우리의 피부처럼,</li>
+                            <li>지속가능한 피부 혁신을 추구합니다.</li>
+                        </ul>
+                        <ul class="detail_txt">
+                            <li>환경은 우리의 피부에 직접적인 영향을 끼칩니다. 니베아가 피부의 자연스런 밸런스를 중요시하는 것은 자연을 중요하게 생각하는 것과 같습니다.</li>
+                        </ul>
+                        <div class="number_box">
+                            <span class="front_circle">03</span>
+                            <span class="back_circle">04</span>   
+                        </div>
+                    </article>
+                    <article class="element_list4">
+                        <ul class="title_txt">
+                            <li class="main_title">정직과 투명성,</li>
+                            <li>소비자의 사랑은 니베아의 책임감입니다.</li>
+                        </ul>
+                        <ul class="detail_txt">
+                            <li>소비자의 사랑만큼 그에 따른 책임감을 가집니다. 이는 니베아 기업 활동의 근간을 이루며, 니베아의 신념과 가치를 이룰 수 있는 원동력입니다.</li>
+                        </ul>
+                        <div class="number_box">
+                            <span class="front_circle">04</span>
+                            <span class="back_circle">05</span>   
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <button>자세히 보기</button>
+        </section>
+    </main>
+    <footer>
+        <div class="foot_element_wrap">
+            <div class="element_left_wrap">
+                <div class="site_map_wrap">
+                    <div class="top">
+                        <ul class="title">
+                            <li>알림 : 최신 상태로 유지</li>
+                        </ul>
+                        <ul class="site_map_element">
+                            <li>
+                                <a href="#">conditions-of-use</a>
+                            </li>
+                            <li>
+                                <a href="#">개인정보처리방침</a>
+                            </li>
+                            <li>
+                                <a href="#">법적고지</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="site_map_element bottom">
+                        <li>
+                            <a href="#">자주 묻는 질문들</a>
+                        </li>
+                        <li>
+                            <a href="#">사이트 맵</a>
+                        </li>
+                        <li>
+                            <a href="#">NIVEA Global</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nivea_more_wrap">
+                    <ul class="more_link">
+                        <li>무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</li>
+                        <div class="link_wrap">
+                            <ul class="more_link_element top">
+                                <li>
+                                    <a href="#">니베아 역사 – 100년 동안 만들어진 이야기</a>
+                                </li>
+                                <li>
+                                    <a href="#">바이어스도르프 커리어</a>
+                                </li>
+                            </ul>
+                            <ul class="more_link_element bottom">
+                                <li>
+                                    <a href="#">니베아가 환경을 대하는 방법</a>
+                                </li>
+                                <li>
+                                    <a href="#">연락처</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="element_right_wrap">
+                <dl class="foot_SNS">
+                    <dt>SNS에 연결 해보세요.</dt>
+                    <dd>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86" fill="#fff">
+                                <path class="cls-1" d="M24.09,3.61H8a4.81,4.81,0,0,0-4.8,4.8V23.74A4.81,4.81,0,0,0,8,28.54H24.09a4.81,4.81,0,0,0,4.8-4.8V8.41A4.81,4.81,0,0,0,24.09,3.61Zm-8,9.33a4.86,4.86,0,1,1-4.86,4.86A4.87,4.87,0,0,1,16.1,12.93Zm6.18-7.08A2.26,2.26,0,1,1,20,8.11,2.26,2.26,0,0,1,22.28,5.86Zm1.81,21.08H8a3.21,3.21,0,0,1-3.2-3.2V12.3h8a6.46,6.46,0,1,0,6.77,0h7.8V23.74A3.21,3.21,0,0,1,24.09,26.94Z"></path>
+                            </svg>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86" fill="#fff">
+                                <path class="cls-1" d="M13,29.46V15.89H9.59V12.53H13V8c0-3.44,2.13-5.46,5.74-5.46a10.4,10.4,0,0,1,3.65.67l-.64,3.61A4.3,4.3,0,0,0,19.4,6a2.18,2.18,0,0,0-2.34,2.41v4.14h5l-.85,3.37H17.06V29.46Z"></path>
+                            </svg>
+                        </a>
+                    </dd>
+                </dl>
+                <div class="copyright_wrap">
+                    <a href="#">
+                        <svg viewBox="0 0 130 22" width="130" height="22" xml:space="preserve" fill="#fff">
+                            <g>
+                                <path class="st0" d="M113.1,13.5v7.3h4.1v-7.3c0-2.7,1.1-3.6,2.9-3.6h1.5V6.3h-1.8C115.5,6.3,113.1,8.9,113.1,13.5z M55.7,13.5v7.3
+                                h4.1v-7.3c0-2.7,1.1-3.6,2.9-3.6h1.5V6.3h-1.8C58.1,6.3,55.7,8.9,55.7,13.5z M123.1,5.2c-0.1-1.4,0.6-2.7,1.7-3.5
+                                C126,1,127.1,1,128.4,1h1.6v3.3h-1c-0.6-0.1-1.2,0.1-1.6,0.6c-0.3,0.3-0.2,0.5-0.2,1.1v0.4h2.7v3.3h-2.7V18c0,0-0.1,2.7-2.4,2.7
+                                h-1.8C123.1,20.7,123,5.6,123.1,5.2z"></path>
+                                <path d="M6.6,1C7.7,1,8.7,1,9.8,1c1.7,0.1,3.3,0.7,4.5,1.9c0.8,0.8,1.2,1.9,1.1,3.1c0.1,1.5-0.7,2.9-1.9,3.7
+                                c-0.3,0.2-0.6,0.4-1,0.4c0.4,0.2,0.9,0.4,1.3,0.7c1.3,1,2.1,2.5,2,4.1c0,1.1-0.3,2.3-1,3.3c-1.9,2.7-5.2,2.5-6,2.5s-1.9,0-2.7,0
+                                H2.9c-2.7,0-2.9-2.9-2.9-2.9V1H6.6z M6.8,8.7c1.5,0,2.6,0.1,3.1-0.3c0.7-0.3,1.1-1,1.1-1.8c0-0.8-0.4-1.5-1.1-1.7
+                                C9.1,4.7,8.2,4.7,7.3,4.7H4.4v4H6.8z M7,17c0.6,0,1.2,0,1.7,0c1-0.1,1.7-0.1,2.2-0.9c0.3-0.4,0.5-1,0.5-1.6c0.1-1.1-0.7-2-1.8-2.3
+                                c-0.8-0.1-1.5-0.1-2.3-0.1H4.4v4.3c0,0,0.1,0.6,0.6,0.6L7,17L7,17z"></path>
+                                <polygon class="st0" points="33.3,20.8 33.3,6.4 37.5,6.4 37.5,20.8 	"></polygon>
+                                <path d="M94.1,1v19.8H90c0-0.6,0-1.1,0.1-1.7c-0.3,0.4-0.5,0.8-0.9,1.2c-0.9,0.7-2,1-3.1,1c-0.9,0-1.9-0.2-2.7-0.6
+                                c-1.7-0.8-3.7-2.8-3.7-7c0-1.1,0.2-2.2,0.5-3.3C81.1,7.8,83.2,6,86.1,6c1.1,0,2.2,0.3,3.1,1c0.2,0.2,0.4,0.4,0.6,0.6V3.5
+                                c0-0.7,0.3-1.3,0.8-1.9s1.1-0.8,1.9-0.7L94.1,1z M83.9,13.6c0,1.9,0.5,2.8,1.1,3.4c0.5,0.6,1.2,0.9,2,0.9c0.6,0,1.1-0.2,1.6-0.5
+                                c0.9-0.6,1.4-1.8,1.4-4c0-0.3,0.1-2.4-1.2-3.4c-0.5-0.4-1.1-0.6-1.8-0.6C85.4,9.4,83.8,10.5,83.9,13.6L83.9,13.6z M21.4,14.9
+                                c0,0.6,0.2,1.2,0.6,1.8c0.6,0.9,1.6,1.4,2.6,1.3c1,0.1,2-0.4,2.6-1.3h4.3c-1.6,4.3-5.4,4.7-7,4.7c-1,0-1.9-0.1-2.7-0.4
+                                c-3.1-1.1-4.6-4-4.6-7.1c0-1.9,0.6-3.7,1.7-5.2c1.3-1.7,3.4-2.7,5.7-2.6c1,0,2,0.2,2.9,0.6c1.4,0.6,3.3,2,4,5.5
+                                c0.1,0.8,0.2,1.5,0.3,2.3c0,0.1,0,0.3,0,0.5L21.4,14.9z M27.3,11.9c0-0.2,0-0.4-0.1-0.6c-0.3-1.3-1.5-2.1-2.7-2
+                                c-1.3,0-2.5,0.8-2.9,2c-0.1,0.3-0.1,0.4-0.2,0.7L27.3,11.9z M43.8,14.9c0,0.6,0.2,1.2,0.5,1.8c0.6,0.9,1.6,1.4,2.7,1.3
+                                c1,0.1,2-0.4,2.6-1.3h4.3c-1.6,4.3-5.4,4.7-7,4.7c-1,0-1.9-0.1-2.7-0.4c-3.1-1.1-4.6-4-4.6-7.1c0-1.9,0.6-3.7,1.7-5.2
+                                c1.3-1.8,3.5-2.7,5.7-2.6c1,0,2,0.2,2.9,0.6c1.4,0.6,3.3,2,4,5.5c0.1,0.8,0.2,1.5,0.3,2.3c0,0.1,0,0.3,0,0.5L43.8,14.9z M49.6,11.9
+                                c0-0.2,0-0.4-0.1-0.6c-0.3-1.3-1.4-2.2-2.7-2.1c-1.3,0-2.5,0.8-2.9,2c-0.1,0.3-0.1,0.4-0.2,0.7H49.6z"></path>
+                                <path class="st0" d="M74,10.7c-0.1-0.3-0.1-0.5-0.3-0.7c-0.5-0.7-1.4-1.1-2.3-1c-0.3,0-0.5,0-0.8,0.1c-0.9,0.2-1.2,0.8-1.2,1.2
+                                c0,0.3,0.3,0.6,0.6,0.8c0.5,0.2,1.1,0.3,1.7,0.4l1.5,0.3l1.3,0.3c1.4,0.4,2.6,0.8,3.3,2.3c0.3,0.6,0.4,1.2,0.4,1.9
+                                c0,1-0.3,1.9-0.8,2.7c-0.8,1.2-2.4,2.3-5.6,2.3s-4.7-1-5.6-2.1c-0.7-0.8-1.1-1.9-1.1-3.1h4c0.1,0.4,0.1,0.7,0.3,1
+                                c0.3,0.5,1.1,1,2.6,1c0.3,0,0.6-0.1,0.9-0.1c0.2,0,1.3-0.3,1.3-1.3c0-1-1-1.2-2.4-1.5c-2.7-0.6-4-0.9-5-1.9
+                                c-0.7-0.7-1.1-1.7-1.1-2.7c0-0.9,0.3-1.7,0.7-2.5c0.8-1.2,2.3-2.3,5.3-2.3c0.6,0,3.6,0,5.4,2.1c0.6,0.8,1,1.7,1,2.7L74,10.7z"></path>
+                                <path d="M108.7,7.7c1.7,1.5,2.6,3.6,2.6,5.9c0,3.3-1.8,6.3-4.9,7.3c-0.9,0.3-1.9,0.4-2.7,0.4c-1,0-2-0.2-3.1-0.5
+                                c-3-1.1-4.5-4-4.5-7.1c-0.1-2,0.6-3.9,1.9-5.4c1.5-1.5,3.6-2.4,5.7-2.3C105.6,5.9,107.3,6.6,108.7,7.7z M100.2,13.6
+                                c0,3.3,1.8,4.3,3.4,4.3c0.5,0,1.1-0.1,1.5-0.3c1-0.5,1.9-1.7,1.9-4c0-0.7-0.1-1.3-0.3-2c-0.4-1.3-1.7-2.3-3.1-2.2
+                                C102,9.3,100.2,10.3,100.2,13.6L100.2,13.6z"></path>
+                                <ellipse class="st0" cx="35.4" cy="2.3" rx="2.4" ry="2.3"></ellipse>
+                            </g>
+                        </svg>
+                    </a>
+                    <span class="copy_txt">저작권 © 바이어스도르프 2024</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font-family: "Afacad"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>detail</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/detail.css">
+    <script src="js/detail.js"></script>
+    <script src="js/nav.js"></script>
+</head>
+<body>
+    <!-- 액티브 네비게이션 -->
+    <div class="nav_active_wrap">
+        <ul class="user_account">
+            <li>
+                <a href="login.html" class="signUp">Sign Up</a>
+            </li>
+            <li>
+                <a href="login.html" class="logIn">Log in</a>
+            </li>
+        </ul>
+        <form class="search_box">
+            <label class="none">검색</label>
+            <input id="search_text" type="search" placeholder="무엇을 찾으시나요?">
+            <span class="active_search_Icon">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#0233A0">
+                        <path d="M30.718,31.522,22.4,23.207a.8.8,0,0,1-.014-1.116,11.957,11.957,0,1,0-3.463,2.542.8.8,0,0,1,.7,1.439,13.613,13.613,0,1,1,4.442-3.459l7.781,7.779Z"></path>
+                    </svg>
+                </a>
+            </span>
+        </form>
+        <nav class="nav_active">
+            <div class="nav_active_list">
+                <ul class="active_mainmenu">
+                    <li>
+                        <a href="#">PRODUCTS</a>
+                    </li>
+                    <div class="subMore_icon">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </div>
+                </ul>
+                <ul class="active_submenu">
+                    <li>
+                        <a href="product.html">전체 제품</a>
+                    </li>
+                    <li>
+                        <a href="product.html">신제품</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_active_list">
+                <ul class="active_mainmenu">
+                    <li>
+                        <a href="#">ADVICE</a>
+                    </li>
+                    <div class="subMore_icon">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </div>
+                </ul>
+                <ul class="active_submenu">
+                    <li>
+                        <a href="#">피부조언</a>
+                    </li>
+                    <li>   
+                        <a href="#">남성 피부 팁</a>
+                    </li>
+                    <li>
+                        <a href="#">라이프 스타일</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_active_list">
+                <ul class="active_mainmenu">
+                    <li>
+                        <a href="#">RECOMMEND</a>
+                    </li>
+                    <div class="subMore_icon">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </div>
+                </ul>
+                <ul class="active_submenu">
+                    <li>
+                        <a href="product.html">에디터 추천</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_active_list">
+                <ul class="active_mainmenu">
+                    <li>
+                        <a href="#">NIVEA WORLD</a>
+                    </li>
+                    <div class="subMore_icon">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </div>
+                </ul>
+                <ul class="active_submenu">
+                    <li>
+                        <a href="#">역사와 가치</a>
+                    </li>
+                    <li>
+                        <a href="#">뉴스 속의 니베아</a>
+                    </li>
+                    <li>
+                        <a href="#">지속 가능성</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <header>
+        <div class="head_wrap">
+            <!-- 헤더 로고 영역 -->
+            <h1 class="head_Logo">
+                <a href="index.html">
+                    <img id = "logoImg" src="img/detail-img/header/NIVEA_logo_2021.svg" alt="nivea-logo">
+                </a>
+            </h1>
+            <!-- 네비게이션 영역 -->
+            <nav class="navigation">
+                <div class="nav_wrap">
+                    <div class="nav_list">
+                        <ul class="mainmenu">
+                            <li>
+                                <a href="product.html">PRODUCTS</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu">
+                            <li>
+                                <a href="product.html">전체 제품</a>
+                            </li>
+                            <li>
+                                <a href="product.html">신제품</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_list">
+                        <ul class="mainmenu">
+                            <li>
+                                <a href="#">ADVICE</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">피부조언</a>
+                            </li>
+                            <li>   
+                                <a href="#">남성 피부 팁</a>
+                            </li>
+                            <li>
+                                <a href="#">라이프 스타일</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_list">
+                        <ul class="mainmenu">
+                            <li>
+                                <a href="product.html">RECOMMEND</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu">
+                            <li>
+                                <a href="product.html">에디터 추천</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_list">
+                        <ul class="mainmenu">
+                            <li>
+                                <a href="#">NIVEA WORLD</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">역사와 가치</a>
+                            </li>
+                            <li>
+                                <a href="#">뉴스 속의 니베아</a>
+                            </li>
+                            <li>
+                                <a href="#">지속 가능성</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg_color"></div>
+            </nav>
+            <!-- 헤더 아이콘 영역 -->
+            <div class="header_Icon_Wrap">
+                <span class="search_Icon">
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#0233A0">
+                            <path d="M30.718,31.522,22.4,23.207a.8.8,0,0,1-.014-1.116,11.957,11.957,0,1,0-3.463,2.542.8.8,0,0,1,.7,1.439,13.613,13.613,0,1,1,4.442-3.459l7.781,7.779Z"></path>
+                        </svg>
+                    </a>
+                </span>
+                <span class="message_Icon">
+                    <a href="#">
+                        <svg width="40" height="26" viewBox="0 0 40 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1V25M1 1H20H39M1 1L15.5859 12.0545M39 1V25M39 1L20 15.4L15.5859 12.0545M39 25H1M39 25L25.1818 12.0545M1 25C5.60606 20.8222 14.9717 12.3842 15.5859 12.0545" stroke="#0233A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </span>
+                <span class="login_Icon">
+                    <a href="login.html">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29 9.5C29 14.1944 25.1944 18 20.5 18C15.8056 18 12 14.1944 12 9.5C12 4.80558 15.8056 1 20.5 1C25.1944 1 29 4.80558 29 9.5Z" stroke="#0233A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 38V28.6667C2 26.0893 4.01472 24 6.5 24H33.5C35.9854 24 38 26.0893 38 28.6667V38" stroke="#0233A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main_container">
+            <!--상세 상단-->
+            <article class="detailArea">
+                <!--이미지 영역 L-->
+                <div class="product_image">
+                    <div class="imgArea">
+                        <img src="img/detail-img/main/Revitalizing-Wash-Gel.png" alt="리바이탈 라이징 워시 젤">
+                        <span class="sale_label">Sale</span>
+                    </div>
+                </div>
+                <!--상세정보 영역 R-->
+                <div class="infoArea">
+                    <!--타이틀-->
+                    <ul class="product_title_wrap">
+                        <li class="text_en ft_Afacad">Revitalizing Wash Gel</li>
+                        <li class="text_kr">리바이탈 라이징 워시 젤 125ml</li>
+                    </ul>
+                    <!--가격-->
+                    <ul class="product_price_wrap">
+                        <li class="price_original">
+                            <span>&#8361;</span>35,900
+                        </li>
+                        <li class="price_current">
+                            <span>&#8361;</span>29,900
+                        </li>
+                    </ul>
+                    <!--상품 정보-->
+                    <ul class="product_explanation">
+                        <li class="introduction">
+                            부드러운 타입의 워시 젤이 순한 세정력으로 피부의 노폐물을 제거하며,
+                            <span>피부 케어를 도와주어 촉촉하고 매끄러운 피부로 가꿔줍니다.</span>
+                        </li>
+                        <li class="product_keyword ft_Afacad">Moisturizing</li>
+                        <li class="product_keyword ft_Afacad">48 hour hydration</li>
+                    </ul>
+                    <!--상품 상세 정보 토글-->
+                    <div class="product_information_box">
+                        <!--성분토글-->
+                        <div class="ingredient_toggle toggle_box">
+                            <div class="toggle_icon">
+                                <div class="top">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                                <div class="bottom">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                            </div>
+                            <div class="toggle_title title_ingredient">성분</div>
+                            <!--토글 설명-->
+                            <div class="ingredient_list explanation">
+                                정제수, 미네랄오일, 마이크로크리스탈린왁스, 글리세린, 라놀린알코올, 파라핀, 판테놀, 마그네슘설페이트, 데실올리에이트, 옥틸도데칸올, 알루미늄스테아레이츠, 시트릭애씨드, 마그네슘스테아레이트, 리모넨, 제라니올, 하이드록시시트로넬알, 리날룰, 시트로넬올, 벤질벤조에이트, 신나밀알코올, 조합향료
+                            </div>
+                        </div>
+                        <!--주의사항 토글-->
+                        <div class="caution_toggle toggle_box">
+                            <div class="toggle_icon">
+                                <div class="top">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                                <div class="bottom">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                            </div>
+                            <!--토글 타이틀-->
+                            <div class="toggle_title title_caution">주의사항</div>
+                            <!--토글 설명-->
+                            <div class="caution_explanat explanation">
+                                화장품 사용 시 또는 사용 후 직사광선에 의한 붉은 반점, 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우에는 전문의 등과 상담 할 것
+                                <span>상처가 있는 부위 등은 사용 자제 할 것</span>
+                                <span>눈에 들어갔을 때에는 즉시 씻어낼 것</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--버튼 영역-->
+                    <div class="infoArea_btn_Wrap">
+                        <div class="btn_top_area">
+                            <!--수량 버튼-->
+                            <div class="count_btn_wrap">
+                                <button class="count_btn">1</button>
+                                <!--수량 추가 아이콘-->
+                                <div class="add_icon count_icon">
+                                    <span class="add_column"></span>
+                                    <span class="add_row"></span>
+                                </div>
+                                <!--수량 제거 아이콘-->
+                                <div class="except_icon count_icon">
+                                    <span class="minus"></span>
+                                </div>
+                            </div>
+                            <!--카트 버튼-->
+                            <button class="addCart_btn ft_Afacad" type="button" onclick="location.href='login.html'">ADD CART</button>
+                        </div>
+                        <!--구매 버튼-->
+                        <button class="shopNow_btn ft_Afacad">SHOP NOW</button>
+                    </div>
+                </div>
+            </article>
+            <!--상세 설명-->
+            <article class="detail_content_area">
+                <!--공통 레이아웃-->
+                <div class="content content1">
+                    <div class="img_area">
+                        <img src="img/detail-img/main/Revitalizing-Wash-Gel.png" alt="상품 상세설명 이미지">
+                    </div>
+                    <div class="text_area">
+                        <ul>
+                            <li class="lang_en ft_Afacad">
+                                Nivea Revitalizing Wash Gel,
+                                <span>CLEAN & CARE</span>
+                            </li>
+                            <li class="lang_kr">맑고 깨끗한 피부의 시작
+                                <span>깔끔하고 건강하게,니베아 워시 젤</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content content2">
+                    <div class="img_area">
+                        <img src="img/detail-img/main/Moist-Bubble.png" alt="버블">
+                    </div>
+                    <div class="text_area">
+                        <ul>
+                            <li class="lang_en ft_Afacad">MOIST BUBBLE.</li>
+                            <li class="lang_kr">
+                                풍성하고 조밀한 수분 버블이
+                                <span>피부에 필요한 수분만 남겨주고 말끔하게 헹궈줍니다.</span>
+                                <span>세안 후에도 당김 없이 촉촉한 피부를 경험하세요.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content content3">
+                    <div class="img_area">
+                        <img src="img/detail-img/main/Hydrathing.png" alt="히알루론산">
+                    </div>
+                    <div class="text_area">
+                        <ul>
+                            <li class="lang_en ft_Afacad">HYDRATING.</li>
+                            <li class="lang_kr">
+                                8중 히알루론산과 아미노산 콤플렉스가 함유되어
+                                <span>세안 후 피부 장벽을 케어하고 촘촘한 수분을 공급해 줍니다.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--추가 레이아웃-->
+                <div class="add_content">
+                    <div class="content-L">
+                        <div class="txt_wrap"><!--absolute-->
+                            <ul class="text-1 withTxt ft_Afacad">
+                                <li>NIVEA WASH WITH </li>
+                            </ul>
+                            <ul class="text-2 withTxt ft_Afacad">
+                                <li>CARE</li>
+                                <li>~</li>
+                                <li>FOR</li>
+                            </ul>
+                            <ul class="text-3 withTxt">
+                                <li>YOU</li>
+                            </ul>
+                            <ul class="miniTxt ft_Afacad">
+                                <li>Nivea New Deep Clean</li>
+                                <li>Revitalizing Wash Gel,</li>
+                                <li>Clean & Care</li>
+                            </ul>
+                        </div>
+                        <div class="img_square">
+                            <ul>
+                                <li>
+                                    <img src="img/detail-img/main/with-box-1.png" alt="with-IMG-1">
+                                </li>
+                                <li>
+                                    <img src="img/detail-img/main/with-box-2.png" alt="with-IMG-2">
+                                </li>
+                                <li>
+                                    <img src="img/detail-img/main/with-box-3.png" alt="with-IMG-3">
+                                </li>
+                                <li>
+                                    <img src="img/detail-img/main/with-box-4.png" alt="with-IMG-4">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-R">
+                        <img src="img/detail-img/main//product-set.png" alt="워시젤 세트">
+                    </div>
+                </div>
+            </article>
+            <!--관심 예상 상품 영역-->
+            <article class="user_favorit_product">
+                <!--타이틀 및 구분선-->
+                <div class="user_favorit_title ft_Afacad">
+                    <span class="title_txt">your might also like</span>
+                    <span class="division_line"></span>
+                </div>
+                <!--관심 예상 상품 리스트-->
+                <div class="user_favorit_visible_wrap">
+                    <div class="user_favorit_list_wrap">
+                        <!--리스트1-->
+                        <div class="favorit_list list-1">
+                            <div class="img_box">
+                                <a href="#">
+                                    <img src="img/detail-img/main/Hydrating-Boost-Serum.png" alt="하이드레이팅 부스트 세럼">
+                                    <span class="sale_label">Sale</span>
+                                    <span class="hover_viewMore_box ft_Afacad">VIEW MORE</span>
+                                </a>
+                            </div>
+                            <ul class="favorit_product_title">
+                                <li class="ft_Afacad">
+                                    <a href="" class="title_en">Hydrating Boost Serum</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="title_kr">하이드레이팅 부스트 세럼</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="favorit_list list-2">
+                            <div class="img_box">
+                                <a href="#">
+                                    <img src="img/detail-img/main/Long-Roasting-Moisturizing-aqua-glowl.png" alt="로스팅 모이스처라이징 아쿠아 글로우">
+                                    <span class="sale_label">Sale</span>
+                                    <span class="hover_viewMore_box ft_Afacad">VIEW MORE</span>
+                                </a>
+                            </div>
+                            <ul class="favorit_product_title">
+                                <li class="ft_Afacad">
+                                    <a href="" class="title_en">Roasting Moisturizing aqua glowl</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="title_kr">로스팅 모이스처라이징 아쿠아 글로우</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="favorit_list list-3">
+                            <div class="img_box">
+                                <a href="#">
+                                    <img src="img/detail-img/main/Professinal-Anti-Age-Night-Care-Creaml.png" alt="안티 에이지 나이트 케어 크림">
+                                    <span class="sale_label">Sale</span>
+                                    <span class="hover_viewMore_box ft_Afacad">VIEW MORE</span>
+                                </a>
+                            </div>
+                            <ul class="favorit_product_title">
+                                <li class="ft_Afacad">
+                                    <a href="" class="title_en">Anti-Age Night Care Creaml</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="title_kr">안티 에이지 나이트 케어 크림</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="favorit_list list-4">
+                            <div class="img_box">
+                                <a href="#">
+                                    <img src="img/detail-img/main/Smooth-Daily-Moisture-Argan-oil.png" alt="스무스 데일리 모이스처 아르간 오일">
+                                    <span class="sale_label">Sale</span>
+                                    <span class="hover_viewMore_box ft_Afacad">VIEW MORE</span>
+                                </a>
+                            </div>
+                            <ul class="favorit_product_title">
+                                <li class="ft_Afacad">
+                                    <a href="" class="title_en">Smooth Daily Moisture Argan oil</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="title_kr">스무스 데일리 모이스처 아르간 오일</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="favorit_list list-5">
+                            <div class="img_box">
+                                <a href="#">
+                                    <img src="img/detail-img/main/Refreshing-Day-Cream.png" alt="리프레싱 데이 크림">
+                                    <span class="sale_label">Sale</span>
+                                    <span class="hover_viewMore_box ft_Afacad">VIEW MORE</span>
+                                </a>
+                            </div>
+                            <ul class="favorit_product_title">
+                                <li class="ft_Afacad">
+                                    <a href="" class="title_en">Refreshing Day Cream</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="title_kr">리프레싱 데이 크림</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--이전 / 다음 버튼 영역-->
+                <div class="pre_btn"></div>
+                <div class="next_btn"></div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="foot_element_wrap">
+            <div class="element_left_wrap">
+                <div class="site_map_wrap">
+                    <div class="top">
+                        <ul class="title">
+                            <li>알림 : 최신 상태로 유지</li>
+                        </ul>
+                        <ul class="site_map_element">
+                            <li>
+                                <a href="#">conditions-of-use</a>
+                            </li>
+                            <li>
+                                <a href="#">개인정보처리방침</a>
+                            </li>
+                            <li>
+                                <a href="#">법적고지</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="site_map_element bottom">
+                        <li>
+                            <a href="#">자주 묻는 질문들</a>
+                        </li>
+                        <li>
+                            <a href="#">사이트 맵</a>
+                        </li>
+                        <li>
+                            <a href="#">NIVEA Global</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nivea_more_wrap">
+                    <ul class="more_link">
+                        <li>무엇을 도와드릴까요? 니베아에 대해 더 알아보세요</li>
+                        <div class="link_wrap">
+                            <ul class="more_link_element top">
+                                <li>
+                                    <a href="#">니베아 역사 – 100년 동안 만들어진 이야기</a>
+                                </li>
+                                <li>
+                                    <a href="#">바이어스도르프 커리어</a>
+                                </li>
+                            </ul>
+                            <ul class="more_link_element bottom">
+                                <li>
+                                    <a href="#">니베아가 환경을 대하는 방법</a>
+                                </li>
+                                <li>
+                                    <a href="#">연락처</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="element_right_wrap">
+                <dl class="foot_SNS">
+                    <dt>SNS에 연결 해보세요.</dt>
+                    <dd>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86" fill="#fff">
+                                <path class="cls-1" d="M24.09,3.61H8a4.81,4.81,0,0,0-4.8,4.8V23.74A4.81,4.81,0,0,0,8,28.54H24.09a4.81,4.81,0,0,0,4.8-4.8V8.41A4.81,4.81,0,0,0,24.09,3.61Zm-8,9.33a4.86,4.86,0,1,1-4.86,4.86A4.87,4.87,0,0,1,16.1,12.93Zm6.18-7.08A2.26,2.26,0,1,1,20,8.11,2.26,2.26,0,0,1,22.28,5.86Zm1.81,21.08H8a3.21,3.21,0,0,1-3.2-3.2V12.3h8a6.46,6.46,0,1,0,6.77,0h7.8V23.74A3.21,3.21,0,0,1,24.09,26.94Z"></path>
+                            </svg>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86" fill="#fff">
+                                <path class="cls-1" d="M13,29.46V15.89H9.59V12.53H13V8c0-3.44,2.13-5.46,5.74-5.46a10.4,10.4,0,0,1,3.65.67l-.64,3.61A4.3,4.3,0,0,0,19.4,6a2.18,2.18,0,0,0-2.34,2.41v4.14h5l-.85,3.37H17.06V29.46Z"></path>
+                            </svg>
+                        </a>
+                    </dd>
+                </dl>
+                <div class="copyright_wrap">
+                    <a href="#">
+                        <svg viewBox="0 0 130 22" width="130" height="22" xml:space="preserve" fill="#fff">
+                            <g>
+                                <path class="st0" d="M113.1,13.5v7.3h4.1v-7.3c0-2.7,1.1-3.6,2.9-3.6h1.5V6.3h-1.8C115.5,6.3,113.1,8.9,113.1,13.5z M55.7,13.5v7.3
+                                h4.1v-7.3c0-2.7,1.1-3.6,2.9-3.6h1.5V6.3h-1.8C58.1,6.3,55.7,8.9,55.7,13.5z M123.1,5.2c-0.1-1.4,0.6-2.7,1.7-3.5
+                                C126,1,127.1,1,128.4,1h1.6v3.3h-1c-0.6-0.1-1.2,0.1-1.6,0.6c-0.3,0.3-0.2,0.5-0.2,1.1v0.4h2.7v3.3h-2.7V18c0,0-0.1,2.7-2.4,2.7
+                                h-1.8C123.1,20.7,123,5.6,123.1,5.2z"></path>
+                                <path d="M6.6,1C7.7,1,8.7,1,9.8,1c1.7,0.1,3.3,0.7,4.5,1.9c0.8,0.8,1.2,1.9,1.1,3.1c0.1,1.5-0.7,2.9-1.9,3.7
+                                c-0.3,0.2-0.6,0.4-1,0.4c0.4,0.2,0.9,0.4,1.3,0.7c1.3,1,2.1,2.5,2,4.1c0,1.1-0.3,2.3-1,3.3c-1.9,2.7-5.2,2.5-6,2.5s-1.9,0-2.7,0
+                                H2.9c-2.7,0-2.9-2.9-2.9-2.9V1H6.6z M6.8,8.7c1.5,0,2.6,0.1,3.1-0.3c0.7-0.3,1.1-1,1.1-1.8c0-0.8-0.4-1.5-1.1-1.7
+                                C9.1,4.7,8.2,4.7,7.3,4.7H4.4v4H6.8z M7,17c0.6,0,1.2,0,1.7,0c1-0.1,1.7-0.1,2.2-0.9c0.3-0.4,0.5-1,0.5-1.6c0.1-1.1-0.7-2-1.8-2.3
+                                c-0.8-0.1-1.5-0.1-2.3-0.1H4.4v4.3c0,0,0.1,0.6,0.6,0.6L7,17L7,17z"></path>
+                                <polygon class="st0" points="33.3,20.8 33.3,6.4 37.5,6.4 37.5,20.8 	"></polygon>
+                                <path d="M94.1,1v19.8H90c0-0.6,0-1.1,0.1-1.7c-0.3,0.4-0.5,0.8-0.9,1.2c-0.9,0.7-2,1-3.1,1c-0.9,0-1.9-0.2-2.7-0.6
+                                c-1.7-0.8-3.7-2.8-3.7-7c0-1.1,0.2-2.2,0.5-3.3C81.1,7.8,83.2,6,86.1,6c1.1,0,2.2,0.3,3.1,1c0.2,0.2,0.4,0.4,0.6,0.6V3.5
+                                c0-0.7,0.3-1.3,0.8-1.9s1.1-0.8,1.9-0.7L94.1,1z M83.9,13.6c0,1.9,0.5,2.8,1.1,3.4c0.5,0.6,1.2,0.9,2,0.9c0.6,0,1.1-0.2,1.6-0.5
+                                c0.9-0.6,1.4-1.8,1.4-4c0-0.3,0.1-2.4-1.2-3.4c-0.5-0.4-1.1-0.6-1.8-0.6C85.4,9.4,83.8,10.5,83.9,13.6L83.9,13.6z M21.4,14.9
+                                c0,0.6,0.2,1.2,0.6,1.8c0.6,0.9,1.6,1.4,2.6,1.3c1,0.1,2-0.4,2.6-1.3h4.3c-1.6,4.3-5.4,4.7-7,4.7c-1,0-1.9-0.1-2.7-0.4
+                                c-3.1-1.1-4.6-4-4.6-7.1c0-1.9,0.6-3.7,1.7-5.2c1.3-1.7,3.4-2.7,5.7-2.6c1,0,2,0.2,2.9,0.6c1.4,0.6,3.3,2,4,5.5
+                                c0.1,0.8,0.2,1.5,0.3,2.3c0,0.1,0,0.3,0,0.5L21.4,14.9z M27.3,11.9c0-0.2,0-0.4-0.1-0.6c-0.3-1.3-1.5-2.1-2.7-2
+                                c-1.3,0-2.5,0.8-2.9,2c-0.1,0.3-0.1,0.4-0.2,0.7L27.3,11.9z M43.8,14.9c0,0.6,0.2,1.2,0.5,1.8c0.6,0.9,1.6,1.4,2.7,1.3
+                                c1,0.1,2-0.4,2.6-1.3h4.3c-1.6,4.3-5.4,4.7-7,4.7c-1,0-1.9-0.1-2.7-0.4c-3.1-1.1-4.6-4-4.6-7.1c0-1.9,0.6-3.7,1.7-5.2
+                                c1.3-1.8,3.5-2.7,5.7-2.6c1,0,2,0.2,2.9,0.6c1.4,0.6,3.3,2,4,5.5c0.1,0.8,0.2,1.5,0.3,2.3c0,0.1,0,0.3,0,0.5L43.8,14.9z M49.6,11.9
+                                c0-0.2,0-0.4-0.1-0.6c-0.3-1.3-1.4-2.2-2.7-2.1c-1.3,0-2.5,0.8-2.9,2c-0.1,0.3-0.1,0.4-0.2,0.7H49.6z"></path>
+                                <path class="st0" d="M74,10.7c-0.1-0.3-0.1-0.5-0.3-0.7c-0.5-0.7-1.4-1.1-2.3-1c-0.3,0-0.5,0-0.8,0.1c-0.9,0.2-1.2,0.8-1.2,1.2
+                                c0,0.3,0.3,0.6,0.6,0.8c0.5,0.2,1.1,0.3,1.7,0.4l1.5,0.3l1.3,0.3c1.4,0.4,2.6,0.8,3.3,2.3c0.3,0.6,0.4,1.2,0.4,1.9
+                                c0,1-0.3,1.9-0.8,2.7c-0.8,1.2-2.4,2.3-5.6,2.3s-4.7-1-5.6-2.1c-0.7-0.8-1.1-1.9-1.1-3.1h4c0.1,0.4,0.1,0.7,0.3,1
+                                c0.3,0.5,1.1,1,2.6,1c0.3,0,0.6-0.1,0.9-0.1c0.2,0,1.3-0.3,1.3-1.3c0-1-1-1.2-2.4-1.5c-2.7-0.6-4-0.9-5-1.9
+                                c-0.7-0.7-1.1-1.7-1.1-2.7c0-0.9,0.3-1.7,0.7-2.5c0.8-1.2,2.3-2.3,5.3-2.3c0.6,0,3.6,0,5.4,2.1c0.6,0.8,1,1.7,1,2.7L74,10.7z"></path>
+                                <path d="M108.7,7.7c1.7,1.5,2.6,3.6,2.6,5.9c0,3.3-1.8,6.3-4.9,7.3c-0.9,0.3-1.9,0.4-2.7,0.4c-1,0-2-0.2-3.1-0.5
+                                c-3-1.1-4.5-4-4.5-7.1c-0.1-2,0.6-3.9,1.9-5.4c1.5-1.5,3.6-2.4,5.7-2.3C105.6,5.9,107.3,6.6,108.7,7.7z M100.2,13.6
+                                c0,3.3,1.8,4.3,3.4,4.3c0.5,0,1.1-0.1,1.5-0.3c1-0.5,1.9-1.7,1.9-4c0-0.7-0.1-1.3-0.3-2c-0.4-1.3-1.7-2.3-3.1-2.2
+                                C102,9.3,100.2,10.3,100.2,13.6L100.2,13.6z"></path>
+                                <ellipse class="st0" cx="35.4" cy="2.3" rx="2.4" ry="2.3"></ellipse>
+                            </g>
+                        </svg>
+                    </a>
+                    <span class="copy_txt">저작권 © 바이어스도르프 2024</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

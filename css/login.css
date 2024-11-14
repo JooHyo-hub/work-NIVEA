@@ -1,0 +1,824 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #111;
+}
+body{
+    width: 100%;
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Pretendard-Regular';
+    position: relative;
+    color: #1e1e1e;
+}
+/* 액티브 네비게이션 */
+div.nav_active_wrap{
+    max-width: 400px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 90px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 10;
+    display: none;
+}
+.nav_active_wrap a{
+    display: block;
+    color: #111;
+}
+ul.user_account{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 30px;
+    float: right;
+    box-sizing: border-box;
+}
+ul.user_account li a{
+    padding: 4px 20px;
+    margin-left: 16px;
+    float: right;
+    font-size: 1.05rem;
+    letter-spacing: 0px;
+    border-radius: 11px;
+    box-sizing: border-box;
+}
+ul.user_account li a.signUp{
+    color: #0032A0;
+    border: 1px solid #0032A0;
+}
+ul.user_account li a.signUp:hover{
+    color: #6C70E1;
+    border: 1px solid #6C70E1;
+    transition: 0.2s;
+}
+ul.user_account li a.logIn{
+    color: #fff;
+    background: #0032A0;
+}
+ul.user_account li a.logIn:hover{
+    background: #6C70E1;
+    transition: 0.2s;
+}
+form.search_box{
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+label.none{
+    display: none;
+}
+input#search_text{
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px;
+    background: #f5f5f5;
+    box-shadow: 2px 2px 5px #dedede41 inset;
+    color: #111;
+    font-weight: 400;
+    outline: none;
+}
+input::-ms-clear,input::-ms-reveal{
+	display:none;
+    width:0;
+    height:0;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+	display:none;
+}
+span.active_search_Icon a{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 38px;
+    right: 50px;
+}
+span.active_search_Icon a svg{
+    width: 100%;
+}
+.nav_active_list{
+    width: 100%;
+    overflow: hidden;
+}
+.nav_active_list li a{
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+}
+ul.active_mainmenu{
+    position: relative;
+}
+ul.active_mainmenu a{
+    background: #fff;
+    font-size: 1.25rem;
+    color: #0032A0;
+    font-family: "Afacad", sans-serif;
+}
+div.subMore_icon{
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+div.subMore_icon span{
+    display: block;
+    width: 3px;
+    height: 14px;
+    background: #0032A0;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    position: absolute;
+}
+div.subMore_icon span.left{
+    transform: rotate(-42deg);
+    top: 4px;
+    left: 12px;
+}
+div.subMore_icon span.right{
+    transform: rotate(42deg);
+    top: 4px;
+    right: 11px;
+}
+ul.active_submenu{
+    display: none;
+}
+ul.active_submenu a{
+    padding: 13px 40px;
+    font-size: 1rem;
+    background: #eff1ff;
+    color: #0032A0;
+}
+ul.active_submenu a:hover{
+    color: #92b0f1;
+    transition: 0.2s;
+}
+/* 기존 헤더 영역 */
+header{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+    background: #fff;
+}
+div.head_wrap{
+    width: 100%;
+    overflow: hidden;
+}
+/* 헤더 로고 */
+.head_Logo a{
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 15%;
+    z-index: 999;
+}
+.head_Logo a img{
+    width: 100%;
+}
+/* 네비게이션 */
+nav.navigation{
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    position: absolute;
+    top: 24px;
+}
+div.nav_wrap{
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+    left: 24%;
+}
+div.nav_list{
+    float: left;
+}
+div.nav_list:nth-child(2){
+    margin-left: -4px;
+}
+div.nav_list:last-child{
+    margin-left: 20px;
+}
+ul li a{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+ul.mainmenu li a{
+    width: 120px;
+    font-size: 1.2rem;
+    color: #0032A0;
+    font-family: "Afacad", sans-serif;
+}
+ul.mainmenu li a:hover{
+    box-shadow: inset 0px -5px 0px #0032A0;
+}
+ul.submenu li a{
+    width: 120px;
+    display: block;
+    padding: 16px 0;
+    font-size: 0.9rem;
+    color:#fff;
+}
+ul.submenu{
+    display: none;
+}
+ul.submenu li a:hover{
+    color: #69748f;
+}
+div.bg_color{
+    width: 100%;
+    height: 167px;
+    background: rgba(60, 61, 142, 0.982);
+    position: absolute;
+    top: 66px;
+    z-index: -10;
+}
+/* 헤더 아이콘 */
+div.header_Icon_Wrap{
+    width: 210px;
+    margin-top: 30px;
+    float: left;
+    box-sizing: border-box;
+    position: absolute;
+    right: 15%;
+}
+.header_Icon_Wrap a{
+    display: block;
+}
+.header_Icon_Wrap span{
+    float: left;
+    margin: 0 17px;
+}
+.header_Icon_Wrap span a{
+    width: 34px;
+    height: 34px;
+}
+.header_Icon_Wrap span svg{
+    width: 100%;
+}
+.search_Icon a{
+    padding-top: 2px;
+}
+.message_Icon a{
+    box-sizing: border-box;
+    padding-top: 6px;
+}
+.header_Icon_Wrap>.search_Icon:hover svg{
+    fill: #7ba5ff;
+    transition: 0.2s;
+}
+.header_Icon_Wrap>.login_Icon:hover path{
+    stroke: #7ba5ff;
+    transition: 0.2s;
+}
+.header_Icon_Wrap>.message_Icon:hover path{
+    stroke: #7ba5ff;
+    transition: 0.2s;
+}
+/* 클릭시 부여할 스타일 */
+.header_Icon_Wrap span.x:nth-child(1){
+    display: none;
+}
+.header_Icon_Wrap span.x:nth-child(2) {
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    position: relative;
+    top: 4px;
+}
+
+.header_Icon_Wrap span.x:nth-child(3) {
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+    position: relative;
+    top: -4px; 
+}
+/*메인*/
+main{
+    width: 100%;
+    margin-top: 90px;
+    background: #fff;
+}
+.main_inner_wrap{
+    max-width: 1920px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+button{
+    cursor: pointer;
+}
+div.login_imgL{
+    width: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+.login_imgL img{
+    width: 100%;
+}
+h1.title{
+    font-size: 56px;
+    font-family: "Afacad", sans-serif;
+    letter-spacing: 13px;
+    color: #0032A0;
+}
+div.login_txtR{
+    width: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+div.txt_inner_wrap{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+/*아이디 및 비밀번호 입력*/
+div.inputs_wrap{
+    margin: 30px 0;
+}
+.ID_PW_wrap input{
+    width: 100%;
+    padding: 16px 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #B5B5B5;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.ID_PW_wrap input:focus{
+    outline:none;
+}
+/*로그인-회원가입-아이디, 비밀번호 찾기*/
+div.use_auth{
+    margin-top: 30px;
+}
+button.use_login_btn{
+    width: 100%;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 6px;
+    background: #365495;
+    color: #fff;
+}
+div.account_wrap{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    color: #5E5E5E;
+} 
+.account_wrap button{
+    border: none;
+    background: transparent;
+    letter-spacing: -1px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #5E5E5E;
+}
+.account_wrap button:hover{
+    color: #acacac;
+}
+div.user_join{
+    float: left;
+}
+div.user_account{
+    float: right;
+}
+button.find_ID_btn::after{
+    content: '|';
+    margin-right: 10px;
+    margin-left: 12px;
+    color: #5E5E5E;
+}
+/*또는(구분선)*/
+div.or_line{
+    width: 100%;
+    margin: 42px 0;
+    text-align: center;
+    color: #B5B5B5;
+    font-weight: 300;
+}
+.or_line span{
+    display: block;
+    width: 40%;
+    height: 0.6px;
+    background: #B5B5B5;
+    margin-top: 10px;
+}
+.or_line span.left{
+    float: left;
+}
+.or_line span.right{
+    float: right;
+}
+/*간편 로그인*/
+div.easy_login_btn{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+div.icon_wrap{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+div.easy_login_btn button{
+    width: 160px;
+    height: 34px;
+    flex : 0 1 auto;
+    line-height: 34px;
+    border: none;
+    letter-spacing: -1px;
+    font-weight: 500;
+    font-size: 14px;
+    background: transparent;
+    color: #5E5E5E;
+}
+div.easy_login_btn button:hover{
+    color: #acacac
+}
+div.naver_login button{
+    width: 140px;
+}
+div.easy_login_btn button img{
+    float: left;
+}
+/*푸터 영역*/
+footer{
+    width: 100%;
+    overflow: hidden;
+    background: #001B55;
+}
+footer a{
+    display: block;
+    color: #eee;
+}
+footer a:hover{
+    color: #ccc;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.foot_element_wrap{
+    max-width: 1920px;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/*왼쪽*/
+.element_left_wrap{
+    width: 55%;
+    height: 480px;
+    box-sizing: border-box;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+/*알림: ~*/
+.site_map_wrap{
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #ccc;
+}
+.site_map_wrap ul.title{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.site_map_wrap .site_map_element li a{
+    float: left;
+    padding: 2px 4px;
+    margin-right: 30px;
+}
+.site_map_wrap .top{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 90px;
+}
+.element_left_wrap .top .site_map_element{
+    margin-top: 30px;
+}
+.site_map_wrap .bottom{
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+/*무엇을 도와드릴까요?*/
+.nivea_more_wrap{
+    width: 100%;
+    height: 50%;
+}
+.more_link{
+    padding-top: 30px;
+}
+.more_link .link_wrap{
+    margin-top: 30px;
+}
+.more_link>li{
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 500;
+}
+.more_link li a{
+    float: left;
+    padding: 2px 4px;
+    margin-right: 30px;
+} 
+.more_link .bottom{
+    clear: both;
+}
+/*오른쪽*/
+.element_right_wrap{
+    float: left;
+    width: 45%;
+    height: 480px;
+    color: #fff;
+}
+dl.foot_SNS{
+    width: 100%;
+    height: 80%;
+    padding: 90px 30px;
+    box-sizing: border-box;
+}
+dl.foot_SNS>dt{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+dl.foot_SNS>dd{
+    float: left;
+}
+dl.foot_SNS>dd a{
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+dl.foot_SNS>dd a svg{
+    margin: 20%;
+}
+dl.foot_SNS>dd:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+/*로고*/
+.copyright_wrap{
+    width: 100%;
+    height: 20%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.copyright_wrap > a{
+    float: left;
+}
+.copy_txt{
+    float: right;
+}
+
+
+/*반응형*/
+@media screen and (max-width: 1370px){
+    /*메인*/
+    div.icon_wrap{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1224px){
+    /*헤더*/
+    .head_Logo a{
+        left: 10%;
+    }
+    div.header_Icon_Wrap{
+        right: 10%;
+    }
+    div.nav_wrap{
+        left: 20%;
+    }
+    /*메인*/
+    .login_imgL img{
+        width: 120%;
+        position: relative;
+        top: 0;
+        right: 15%;
+    }
+}
+@media screen and (max-width: 1046px){
+    /*헤더*/
+    .head_Logo a{
+        left: 5%;
+    }
+    div.header_Icon_Wrap{
+        right: 5%;
+    }
+    div.nav_wrap{
+        left: 15%;
+    }
+}
+@media screen and (max-width: 1010px){
+    /*헤더*/
+    div.nav_wrap{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 980px){
+    /*헤더*/
+    header {
+        height: 60px;
+    }
+    .head_Logo a {
+        transform: scale(0.7);
+        top: -16px;
+    }
+    nav.navigation {
+        display: none;
+    }
+    div.header_Icon_Wrap {
+        width: 30px;
+        height: 30px;
+        top: -10px;
+    }
+    .header_Icon_Wrap span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin: 2px auto;
+        background: #0032A0;
+        border-radius: 10px;
+    }
+    .header_Icon_Wrap span svg {
+        display: none;
+    }
+    /*메인*/
+    div.login_imgL{
+        display: none;
+    }
+    div.login_txtR{
+        width: 100%;
+    }
+    /*푸터*/
+    .foot_element_wrap{
+        padding-top: 30px;
+    }
+    .element_left_wrap{
+        width: 100%;
+        height: 300px;
+        padding: 0 30px;
+    }
+    .site_map_wrap .top{
+        padding-top: 20px;
+    }
+    .element_left_wrap{
+        border-right: none;
+    }
+    .element_right_wrap{
+        width: 100%;
+        height: 234px;
+    }
+    .nivea_more_wrap{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+    }
+    dl.foot_SNS{
+        width: 50%;
+        height: 60%;
+        padding-top: 60px;
+        float: left;
+    }
+    .copyright_wrap{
+        width: 50%;
+        overflow: hidden;
+        padding: 0;
+        margin: 60px 0;
+        float: left;
+    }
+    dl.foot_SNS > dd a{
+        transform: scale(0.9);
+        margin-right: 10px;
+    }
+    .copyright_wrap > a{
+        float: none;
+    }
+    .copy_txt{
+        float: none;
+    }
+}
+@media screen and (max-width: 682px){
+    /*푸터*/
+    .site_map_wrap .site_map_element li a{
+        margin-right: 10px;
+    }
+    .element_left_wrap .top .site_map_element {
+        margin-top: 10px;
+    }
+    .site_map_wrap ul.title{
+        font-size: 1.1rem;
+    }
+    .more_link .link_wrap {
+        margin-top: 10px;
+    }
+    .more_link>li{
+        font-size: 1.1rem;
+    }
+    .more_link li a {
+        margin-right: 10px;
+    }
+    dl.foot_SNS>dt{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 536px){
+    /*푸터*/
+    .site_map_wrap ul.title{
+        font-size: 0.96rem;
+    }
+    .site_map_element li a{
+        font-size: 0.8rem;   
+    }
+    .more_link>li{
+        font-size: 0.96rem;
+    }
+    .more_link li a{
+        font-size: 0.8rem; 
+    }
+    dl.foot_SNS>dt{
+        font-size: 0.96rem;
+    }
+    dl.foot_SNS > dd a{
+        transform: scale(0.8);
+        margin-right: 2px;
+    }
+    .copyright_wrap{
+        transform: scale(0.9);
+    }
+}
+@media screen and (max-width: 480px){
+    /*메인*/
+    .main_inner_wrap{
+        padding: 30px 20px;
+    }
+    h1.title{
+        font-size: 46px;
+    }
+    /*푸터*/
+    dl.foot_SNS{
+        width: 100%;
+        padding-bottom: 100px;
+    }
+    .copyright_wrap{
+        float: none;
+        clear: both;
+        margin: 80px 12px;
+        transform: scale(0.7);
+    }
+}
+@media screen and (max-width: 420px){
+    div.easy_login_btn button{
+        margin: 6px 0;
+    }
+}   
