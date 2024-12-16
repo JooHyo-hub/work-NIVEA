@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
@@ -20,7 +20,7 @@ body{
     width: 100%;
     background: #fff;
     overflow-x: hidden;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard';
     position: relative;
 }
 section h1{
@@ -194,19 +194,23 @@ header{
 }
 div.head_wrap{
     width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 /* 헤더 로고 */
-.head_Logo a{
-    display: block;
+.head_Logo{
     width: 70px;
     height: 70px;
-    margin-top: 10px;
     padding: 5px;
     box-sizing: border-box;
     position: absolute;
+    top: 10px;
     left: 15%;
     z-index: 999;
+}
+.head_Logo a{
+    display: block;
+    width: 100%;
 }
 .head_Logo a img{
     width: 100%;
@@ -471,7 +475,7 @@ button.ShortBtn{
     letter-spacing: 0;
     cursor: pointer;
     box-shadow: 2px 2px 4px #12224923;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard';
     letter-spacing: 1px;
 }
 button.ShortBtn:hover{
@@ -480,7 +484,6 @@ button.ShortBtn:hover{
     font-weight: 700;
     transition: 0.3s;
 }
-
 /*바로가기 링크 영역*/
 section.shortcutLink_conten{
     width: 100%;
@@ -660,7 +663,7 @@ button.moisture_btn{
     letter-spacing: 0;
     cursor: pointer;
     box-shadow: 2px 2px 4px #12224923;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard';
     letter-spacing: 1px;
 }
 button.moisture_btn:hover{
@@ -736,7 +739,7 @@ button.aditor_btn{
     letter-spacing: 0;
     cursor: pointer;
     box-shadow: 2px 2px 4px #12224923;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard';
     letter-spacing: 1px;
 }
 button.aditor_btn:hover{
@@ -856,7 +859,7 @@ button.brandStory_btn{
     letter-spacing: 0;
     cursor: pointer;
     box-shadow: 2px 2px 4px #12224923;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard';
     letter-spacing: 1px;
 }
 button.brandStory_btn:hover{
@@ -907,7 +910,7 @@ section.sustainable{
 .list_buttom_wrap{
     margin: 100px 0;
 }
-.sustainable_list_wrap article{
+.list_wrap > div {
     width: 44%;
     height: 294px;
     padding: 50px 80px;
@@ -917,19 +920,19 @@ section.sustainable{
     border-radius: 20px;
     box-shadow: 2px 2px 4px #12224923;
 }
-article.element_list1, .element_list3{
+.element_list1, .element_list3{
     float: left;
 }
-article.element_list2, .element_list4{
+.element_list2, .element_list4{
     float: right;
     margin-right: 2px;
 }
-.sustainable_list_wrap article .title_txt>li{
+.list_wrap > div .title_txt >li{
     font-size: 1.25rem;
     line-height: 1.9rem;
     font-weight: 500;
 }
-.sustainable_list_wrap article .title_txt>.main_title{
+.list_wrap > div .title_txt >.main_title{
     font-size: 1.5rem;
     font-weight: 800;
     color: #4447CD;
@@ -974,7 +977,7 @@ section.sustainable button{
     letter-spacing: 0;
     cursor: pointer;
     box-shadow: 2px 2px 4px #12224923;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard';
     letter-spacing: 1px;
     position: absolute;
     left: 50%;
@@ -1202,10 +1205,10 @@ dl.foot_SNS>dd:hover{
         max-width: 1000px;
         width: 100%;
     }
-    .sustainable_list_wrap article .title_txt>.main_title{
+    .list_wrap > div .title_txt>.main_title{
         font-size: 1.4rem;
     }
-    .sustainable_list_wrap article .title_txt>li{
+    .list_wrap > div .title_txt>li{
         font-size: 1.1rem;
     }
     .sustainable_list_wrap ul.detail_txt{
@@ -1339,10 +1342,10 @@ dl.foot_SNS>dd:hover{
         max-width: 1000px;
         width: 100%;
     }
-    .sustainable_list_wrap article .title_txt > .main_title {
+    .list_wrap > div .title_txt > .main_title {
         font-size: 1.4rem;
     }
-    .sustainable_list_wrap article .title_txt > li {
+    .list_wrap > div .title_txt > li {
         font-size: 1.1rem;
     }
     .sustainable_list_wrap ul.detail_txt {
@@ -1439,7 +1442,7 @@ dl.foot_SNS>dd:hover{
     section.sustainable {
         max-width: 800px;
     }
-    .sustainable_list_wrap article {
+    .list_wrap > div {
         height: 284px;
         padding: 50px 20px;
     }
@@ -1711,7 +1714,7 @@ dl.foot_SNS>dd:hover{
         margin: 0 auto;
         position: relative;
     }
-    .sustainable_list_wrap article{
+    .list_wrap > div{
         width: 99%;
         max-height: 218px;
         padding: 0;
@@ -1863,7 +1866,7 @@ dl.foot_SNS>dd:hover{
     .list_top_wrap, .list_buttom_wrap{
         height: 502px;
     }
-    .sustainable_list_wrap article{
+    .list_wrap > div{
         max-height: 240px;
     }
     .sustainable_list_wrap article .title_txt>.main_title{
@@ -2002,13 +2005,13 @@ dl.foot_SNS>dd:hover{
     .sustainable article ul.title_txt {
         width: 70%;
     }
-    .sustainable_list_wrap article .title_txt>.main_title {
+    .list_wrap > div .title_txt>.main_title {
         font-size: 1.1rem;
     }
-    .sustainable_list_wrap article .title_txt>li {
+    .list_wrap > div .title_txt>li {
         font-size: 1.0rem;
     }
-    .sustainable_list_wrap ul.detail_txt {
+    .list_wrap ul.detail_txt {
         font-size: 0.96rem;
     }
     div.number_box {
