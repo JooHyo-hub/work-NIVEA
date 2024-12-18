@@ -999,7 +999,7 @@ dl.foot_SNS>dd:hover{
 }
 @media screen and (max-width: 1224px){
     /*헤더*/
-    .head_Logo a{
+    .head_Logo {
         left: 10%;
     }
     div.header_Icon_Wrap{
@@ -1131,7 +1131,7 @@ dl.foot_SNS>dd:hover{
 }
 @media screen and (max-width: 1046px){
     /*헤더*/
-    .head_Logo a{
+    .head_Logo {
         left: 5%;
     }
     div.header_Icon_Wrap{
@@ -1186,9 +1186,9 @@ dl.foot_SNS>dd:hover{
     header {
         height: 60px;
     }
-    .head_Logo a {
+    .head_Logo {
         transform: scale(0.7);
-        top: -16px;
+        top: -5px;
     }
     nav.navigation {
         display: none;
